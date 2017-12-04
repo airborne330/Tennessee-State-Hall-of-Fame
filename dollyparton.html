@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dolly Parton</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,dolly parton, Dolly Parton">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	 .wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+           <a href="patsummitt.html" class="previous">&laquo; Previous</a>
+      		<img src="images/Dollyparton.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+          							By Camille Wells, Raleigh<br><br>Dolly Parton emerged from a childhood of grim mountain poverty with formidable singing and songwriting talents, which she forged first into Nashville country music fame and then into international stardom. While some of her writing strains unnecessarily for approval, most Parton songs--and all of her best ones--are rich, authentic distillations of life and culture in the upland South. Astonishingly prolific, Parton had published over five hundred compositions by 1994, supplying career-enhancing material for many performers besides herself. Of course, Parton is much more than a songsmith; she is a skilled stylist whose gently vibrating, flute-like soprano shimmers and enchants.<br><br>Beyond these gifts, Parton has always cultivated a striking public presence. From the start she molded her fine-boned face, flawless complexion, and voluptuous hourglass figure into a larger-than-life display involving skintight costumes, gravity-defying high heels, blonde wigs of epic abundance, and lavishly applied cosmetics. Not even Hollywood could much amend her hillbilly melding of Daisy May and Mae West into what one journalist has called the "quintessential truck-stop fantasy." Parton shrewdly welcomes the publicity her appearance invites, but she preempts parody or criticism with self-deprecating humor, a disarming smile, and a just-us-girls giggle. She also carries off her frank celebration of her physical attributes with feisty, forthright talk which withers any notion that she is vulnerable or available for exploitation.<br><br>Dolly Rebecca Parton was born in Sevier County on January 19, 1946, the fourth of twelve children. Through determined labor, her sharecropping parents eventually wrested the wherewithal to buy their own small farm. By all accounts, the Partons kept their children clothed, washed, and fed, but there was little comfort, no abundance. To escape this harshness, Dolly Parton relied on daydreams--especially the fantasy that she would become a famous singer. She composed her first song when she was about five years old, and Parton's maternal uncles and aunts, the musically talented Owens family, helped her realize her dream. Through their efforts, she was by age ten a regular radio and television performer in Knoxville, and she cut her first single when she was twelve. Oblivious to stringent rules concerning membership and performance schedules, an Owens uncle hustled her on stage for her first Grand Ole Opry appearance when she was just thirteen. As a result, Parton was exceptionally well seasoned as a writer and performer of songs by 1964, when she graduated from high school and moved to Nashville.<br><br>During the mid-1960s country music was still a man's world. Despite her easily won affiliations with Mercury and Monument Records, two years passed before Parton's work received much notice. Her chance arrived when Bill Phillips recorded her tune "Put It Off Until Tomorrow." Parton herself sang an uncredited backup of which disc jockeys made a popular mystery: who possessed this enthralling voice? Encouraged, Monument Records promoted her 1966 recording of Curly Putnam's "Dumb Blonde." It became a top-ten hit and drew the attention of Porter Wagoner, an Opry mainstay and host of his own nationally syndicated television show. Wagoner hired Parton as the new "girl singer" in his act. This, along with Wagoner's help arranging an RCA contract, were critical breaks in her career. Between 1968 and 1975 Parton enjoyed weekly appearances on The Porter Wagoner Show and a prolific studio career. She recorded twenty-two popular solo albums, plus thirteen exceptionally successful albums with Wagoner. Many still regard Wagoner and Parton as among the best man-woman singing duos in country music history. Solo and duet albums alike were dominated by Parton's own poetic and gutsy explorations of traditional southern themes and included such classics as "Jolene," "Coat of Many Colors," and "Daddy Was An Old-Time Preacher Man."<br><br>During her years with Wagoner, Parton won a dazzling array of music awards as well as membership in the Grand Ole Opry. But still she felt real stardom--and control of her own affairs--would elude her so long as she was confined to a partnership. With difficulty she broke free of Wagoner and then spent two years experimenting with new backup musicians, managers, and touring schedules. Though the Country Music Association named her Female Vocalist of the Year in 1975 and 1976, Parton was nearing exhaustion, certain that the price of promoting her reputation on the road was too high and convinced that her record sales, while substantial by Nashville standards, would never provide real financial freedom. She thus hatched the idea of aiming her talents at the West Coast.<br><br>In the teeth of Nashville's disapproval, Parton signed with a Los Angeles promoter who severed her remaining ties to Porter Wagoner, arranged for her to host a weekly television show, and encouraged her to record an album friendly to pop music fans. The television show mercifully lasted but one season and included only two redeeming episodes. One with guests Linda Ronstadt and Emmylou Harris forecast the significant Trio and Trio II albums. The other with Kenny Rogers launched a series of popular duo appearances and the hit single "Islands in the Stream.”<br><br>
+          							<br><br>
+          							 <div class="more">
+						Parton's attempt to cross over to pop airplay was, by contrast, a genuine triumph. The 1977 album Here You Come Again went gold and generated three hits, including the title song. Parton frankly acknowledged that this record was far "slicker" than she had initially planned, but it brought her a larger, more diverse audience. There ensued guest appearances on national and cable television, invitations to perform in Las Vegas, and five starring movie roles. Collectively these venues gave Parton the resources and fame of her childhood dreams.<br><br>In the early 1980s, Parton began to talk of founding her own theme park at Pigeon Forge in Sevier County. By 1985 she had arranged a partnership that allowed her to enlarge, elaborate, and rename an old park called Silver Dollar City into Dollywood, which is now among the twenty-five most visited parks in the country. The park offers safe, controlled proximity to a southern hillbilly culture that has simultaneously intrigued and alienated Americans for over a century. Americans have long imagined and depicted the mountain South as a physically daunting landscape populated by a primitive, shiftless, and clannish sort of people. Yet when railroads first made Appalachia accessible, industrial entrepreneurs rushed to take advantage of its resources: timber, coal, copper, and an ostensibly jobless workforce. It is both ironic and fitting that Dollywood derives from this exploitation.<br><br>Today Dolly Parton is a unique superstar, the only female performer of her particular background and talents to move with ease in the most glamorous of show-biz circles. She uses her "Professional Personality" role to promote such other-than-musical commodities as cosmetics and lingerie, but she remains a musician of undiminished power. Since Trio appeared in 1987, she has returned to Tennessee for most of her recording. Her latest releases include Honky Tonk Angels, a celebration of her Nashville heritage with fellow Opry veterans Loretta Lynn and Tammy Wynette. Heartsongs: Live from Home confirms her enduring ties to East Tennessee's rugged landscape. The acclaimed bluegrass music releases The Grass Is Blue (1999) and Little Sparrow (2001) take Parton's music back to its acoustic roots. The title of her autobiography, My Life and Other Unfinished Business (1994), suggests what she has also asserted crisply in a recent interview: Dolly Parton has no intention of "going out to pasture." No one imagined she did.<br><br><i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society.</i>
+						</div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+               <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item active">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+</script>
+<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOBACCO</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,tobacco,tennessee tobacco">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+.col-sm-12 .row h2 {
+	text-align: center;
+}
+#nav ul li a{
+	border-radius: 20px;
+}
+.row #mySidenav .closebtn {
+	background-color:#b4943f;
+}
+	 	  @media screen and (max-width:400px){
+			  .col-sm-12 .row p {
+				  float:left;
+			  }
+		  
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  #information{
+		  margin: 0 10%;
+	  }
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+	  #navbar{
+		  float:left;
+	  }
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.navbar.navbar-inverse {
+		background-color:#ffffff;
+}
+	  .navbar.navbar-inverse ul{
+		  margin-left:2.5%;
+	  }
+	  .navbar.navbar-inverse li a:hover{
+		  color:#ffffff;
+		  background-color:#8b0000;
+	  }
+	  #active{
+		  background-color:#8b0000;
+		  color:#ffffff;
+	  }
+	  .container-fluid.text-center footer{
+		  background-color:#8b0000;
+	  }
+
+.row.content #info .read-more-wrap {
+	border: 3px solid #ffffff;
+	height:auto;
+}
+.navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#information .row.content #info {
+	  padding: 2%;
+	border:3px solid #ffffff;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 20px;
+}
+#information .row.content .col-md-12.text-left {
+	color:black;
+}
+
+.row.content #firstsection {
+	color:#000000;
+	background: #dacba2;
+	border: 3px solid #ffffff;
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 20px;
+}
+.row.content .col-md-12 #title {
+	color:#ffffff;
+	text-align: center;
+}
+.col-md-12 #firstsection #copy {
+	color:#44A2C9;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+	a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}		
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      <li><a href="religion.html">RELIGION</a></li>
+      <li><a href="cotton.html">COTTON</a></li>
+      <li><a href="tobacco.html" id="active">TOBACCO</a></li>
+      <li><a href="mules.html">MULES</a></li>
+      <li><a href="tva.html">TVA</a></li>
+      <li><a href="grandoleopry.html">GRAND OLE OPRY</a></li>
+      <li><a href="graceland.html">GRACELAND</a></li>
+      <li><a href="stjudes.html">ST.JUDE'S</a></li>
+ 	  <li><a href="whiskey.html">WHISKEY</a></li>      
+      <li><a href="southern.html">THE SOUTHERN RENASCENCE</a></li>      
+      <li><a href="dollywood.html">DOLLYWOOD</a></li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+  		  <a href="cotton.html" class="previous">&laquo; Previous</a>
+		  <a href="mules.html" class="next">Next &raquo;</a>
+<div class="container-fluid text-center" id="information">    
+  <div class="row content">
+    <div class="col-md-12"> 
+      <h1 id="title">Tobacco</h1>
+  <br><br><br><br>
+		<p id="firstsection">Tobacco was among the first crops planted in Tennessee by the early settlers.  It has long been a cash crop but is divided into different categories.  Burley is the largest category with dark fired being the second largest.  Another even smaller type is air cured.  Cotton and soybeans round out the top three cash crops in the state.  Tax revenues from tobacco sales contribute mightily to public education in Tennessee.  As smoking declines in America, researchers are looking for ways to use tobacco for positive purposes.  Tobacco plants contain vitamins A and E, beta carotene, proteins, and amino acids.  Compounds in the plants are also seen as potential allies in the fight against cancer.</p>
+    </div>
+    	<div class="col-md-12" id="info">
+
+				By Murray Miles, Culleoka<br><br>When the early settlers came to Tennessee and began to till the soil, the production of tobacco was one of the first crops. Since those early days, dollars received for tobacco crops have paid for farms and homes, provided money for Christmas, sent children to college, and added millions of dollars each year to the tax coffers of the state.<br><br>Tobacco is grown in sixty-six of the state's ninety-five counties. Burley tobacco is grown in all of these sixty-six counties, with eight counties producing dark fired tobacco. In 1996, 88 million pounds of burley and 20.7 million pounds of dark fired were produced. In addition, a million pounds of dark air cured tobacco were grown in the six counties of Robertson (630,000 pounds); Sumner (263,000 pounds); Weakley (35,500 pounds); Montgomery (34,000 pounds); Macon (22,600 pounds); and Henry (14,000 pounds).<br><br>Through the years tobacco has ranked among the top five leading cash crops in the state and has ranked number one on several occasions. For the past thirty years soybeans and tobacco have competed for the number one cash crop. Cotton production has made a comeback in recent years and now competes with the other two for first place. In 1996 tobacco ranked third behind cotton and soybeans, with cash receipts totaling $205.4 million, but by 1999 tobacco again had taken the number one position among cash crops in the state, producing 11 percent of the state's farm cash receipts. This comes in face of the changing national markets for tobacco, especially burley tobacco. In wake of the massive $206 billion settlement between the major cigarette manufacturers and forty-six states, a National Tobacco Growers Settlement Trust was established to pay annual funds to qualified and certified tobacco growers in each state. <br><br>For Tennessee farmers to take advantage of the fund, the Tennessee General Assembly established the Tennessee Tobacco Farmers Certifying Board, which has the authority to produce the annual list of Tennessee farmers eligible for monies from the trust fund. Hopefully, the trust fund will help farmers during these significant transition years in the growth and production of burley tobacco.
+Until 1924 burley tobacco was primarily grown only in the eastern part of the state, where smaller hillside farms made tobacco production a natural choice. Demand and the need for diversification brought tobacco production to the rolling hills of Middle Tennessee. Greene County, the location of the state extension tobacco experiment farm, led the state in burley production, producing 8.6 million pounds in 1996. The next four top producers were Macon County with 6.1 million pounds, Claiborne County with 5 million pounds, Washington County with 4.9 million pounds, and Sumner County with 4.7 million pounds. Burley tobacco is used primarily in cigarettes for its flavor and its combustible quality. After it is harvested in the fall, burley is hung up and cured simply by the air flowing through it.
+			<br><br>Dark fired tobacco goes into smokeless tobaccos such as chewing tobacco and snuff. When it is harvested, it must be cured with heat inside the barn. The tobacco is hung, and the floor of the barn is spread with hardwood sawdust and slabs of oak or hickory, and then the tobacco is "fired." This is a tedious process since too much heat can destroy the barn, and too little heat will cause the tobacco to mold. The bulk of the dark fired production is in Middle and Northwest Tennessee. Robertson County was the top producer with 8.7 million pounds in 1996.<div class="more">The other four leading counties in dark fired production were Montgomery County with 4.8 million pounds, Cheatham County with 1.8 million pounds, Dickson County with 1.7 million pounds, and Henry County with 1.3 million pounds.<br><br>Both types of tobacco require a tremendous amount of hand labor. For many years tobacco was tied in "hands" to be marketed, but for the past twenty years, farmers have been baling their tobacco. This makes it much easier to store and haul the tobacco to market. Because of the shortage of domestic labor, producers have been forced to look elsewhere for help, and migrant workers are now the norm on many tobacco farms, helping to set and harvest the tobacco crop.<br><br>In addition to providing an income for over one hundred thousand farmers in Tennessee, tobacco also has a great impact on the state's tax revenues. Tennessee first imposed tobacco taxes in 1925 as a "temporary" measure to help fund public schools. In the fiscal year 1995 the tobacco tax brought in a total revenue of $84.8 million, with $84 million of that used to fund education in the state.<br><br>The future of tobacco in Tennessee remains uncertain. Although farmers and researchers are looking for alternate crops, there are none presently that can approach the dollars per acre that tobacco produces. Researchers are busy studying new ways to use tobacco. They are finding that the tobacco leaf contains vitamins A and E, beta carotene, proteins, and amino acids. Tobacco is also one of the easiest plants to utilize for gene manipulation. Researchers are looking at potential cancer-fighting compounds, along with possible vaccines and other substances from the tobacco plant that can be used in food and drugs.<br><br><big>Suggested Reading:</big><br><br>Donald L. Winters, Tennessee Farming, Tennessee Farmers: Antebellum Agriculture in the Upper South (1994).<br><br><i id="first">Copyrighted material from The</i> <i id="copyright">Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society</i> </div>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid text-left">
+  <p>Copyright &copy; 2017 THOF</p>
+</footer>
+
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+</html>

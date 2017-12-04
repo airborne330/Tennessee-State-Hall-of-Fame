@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andrew Jackson</title>
+    <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,Andrew Jackson, 7th president of the united states, seventh president of the united states">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	 .wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+           <a href="samhouston.html" class="previous">&laquo; Previous</a>
+		  <a href="jamespolk.html" class="next">Next &raquo;</a>
+      		<img src="images/AndrewJackson.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          		<div class="col-md-12" id="info">
+
+				By Harold D. Moser , University of Tennessee<br><br>Andrew Jackson was the seventh president of the United States, serving from 1829 to 1837. As war hero and the "savior of his country," he was one of a handful of Americans who dominated the first half of the nineteenth century. As president he redefined and strengthened the executive office, championing the concept of a united nation against rising threats of disunion. In all estimates, he was one of the strongest presidents, as well as one of the most controversial. He lent his name to a movement, Jacksonian Democracy, and to an era, the Age of Jackson.<br><br>Jackson was born in the frontier settlement of the Waxhaws in South Carolina, the youngest son of Andrew and Elizabeth Hutchinson Jackson, both Scots-Irish from Carrickfergus in northern Ireland. His father died a few months before he was born. Encouraged by his mother to enter the ministry, Jackson obtained a modest education and taught school for a brief time. The Revolutionary War interrupted his education, and Jackson volunteered his services to the American cause. In 1779 his brother Hugh died from war injuries. In 1781 his other sibling, Robert, died of smallpox, which he and Jackson had contracted while British prisoners of war at Camden, South Carolina. Jackson recovered, but later that year, his mother succumbed to cholera while nursing sick family members in Charleston. At fourteen Jackson was an orphan, having only distant maternal relatives to supervise his continuing education, which he resumed after a brief residence in Charleston.<br><br>About 1784 Jackson arrived in Salisbury, North Carolina, where he read law for three years with two distinguished lawyers, receiving his license to practice in 1787. Jackson commenced his profession in North Carolina's Western District in Washington County (now in Tennessee). By October 1788, he had received an appointment as district attorney in Mero District (now Middle Tennessee) and moved to Nashville, where he resided at the home of Rachel Stockley Donelson, the widow of John Donelson, a founder of the town.<br><br>There he met the widow's daughter Rachel, who soon became his wife and the love of his life. Unhappily married to Lewis Robards of Mercer County, Kentucky, she had recently returned to her mother's home. When efforts at reconciliation failed in early 1790, Rachel visited friends in Natchez to escape further mistreatment. Later in the year her estranged husband solicited a divorce decree from the Virginia assembly, but the legislature remanded the petition to the courts of the Kentucky district (then a part of Virginia). Apparently presuming that Robards would proceed with the action, Jackson went to Natchez and married Rachel in August 1791. Robards, however, delayed divorce proceedings (on charges of adultery) until 1792, and the court issued its decree on September 27, 1793. When Andrew and Rachel received news of the court decision, they remarried on January 18, 1794, before a Davidson County justice of the peace.<br><br> The Jacksons settled in Nashville, and over the next few years, Jackson practiced law, speculated in land, bought the Poplar Grove farm in Davidson County (near the Hermitage), and commenced general merchandising in partnership with family and friends. Failed business ventures forced him to sell Poplar Grove and purchase the cheaper Hermitage property (eventually expanding to about one thousand acres), which remained his home for the rest of his life. The Jacksons "adopted" a nephew, Andrew Jackson Donelson (known as Andrew Jackson Jr.), reared several Indian orphans, and served as counselors for numerous children of relatives and friends. The Hermitage farm, generally managed by overseers and worked by slaves, was a model for Middle Tennessee agriculture, with orchards, gardens, livestock, staple crops, cotton gins, and stills. In the early 1820s the Jacksons built a larger house on the site, where they hosted innumerable visitors. Fire destroyed a portion of the dwelling during Jackson's presidency, and in rebuilding, he enlarged the house and added the front and rear porticos.<br><br>Jackson's interest in politics continued even as he built his plantation. As the new Territory South of the River Ohio organized for statehood, Jackson accepted election to its first constitutional convention, and in the fall of 1796, Tennessee voters sent him to Philadelphia as their first representative. A year later, the legislature elected him United States senator. Jackson's role in both bodies was undistinguished, and he resigned in 1798 to become a judge of the Superior Court (now the Tennessee Supreme Court). For the next six years, he rode circuit over the state, resigning in April 1804. By 1806 Jackson had abandoned his legal practice and storekeeping to devote his time to farming, with occasional interruptions for local militia musters.<br><br><div class="more">Jackson's military duties markedly increased upon his election as major general of the Tennessee militia in 1802 and continued for the next twenty years. Though this period brought him national honor, personal and political controversy clouded his fame. In 1803 he quarreled with John Sevier and almost dueled with the governor. In January 1806 he caned Thomas Swann; in May he killed Charles Dickinson in a duel; and in September of that year he tacitly endorsed Aaron Burr's controversial western schemes. Early in 1807, Jackson ran a sword through Samuel Jackson. And in September 1813 he brawled with brothers Jesse and Thomas Hart Benton, taking a bullet in the arm. The bullet was removed during his presidency.<br><br>Jackson's emergence as a popular national figure resulted from his distinguished service as major general in the War of 1812. His first major assignment came when the War Department in Washington ordered his Tennessee soldiers to Natchez in 1812 and there dismissed them. Jackson disobeyed orders and refused to abandon his men. Under severe hardships that earned him the name "Old Hickory," he marched the forces back to Tennessee. A year later, he added to his reputation when he led his men into battle against the Creek Indians, defeating them at Talladega in November 1813, at Emuckfau and Enotochapco in January 1814, and at Horseshoe Bend in March 1814. The Treaty of Fort Jackson, concluded in August 1814, sealed the capitulation of the tribe and transferred most of its land in Alabama and southern Georgia to the United States.<br><br>Having been commissioned major general of the U.S. Army in May 1814, Jackson soon received orders to defend the Gulf Coast against an expected British invasion. He led his troops into Florida, seized Pensacola, and in early December, marched to New Orleans. There, in the early morning of January 8, 1815, a few weeks after the signing of the Treaty of Ghent, he resoundingly defeated the British. That victory brought immediate fame. To many, Jackson was second only to George Washington in service to the Republic. Some, however, found certain aspects of his New Orleans military record disturbing, namely, his approval of the military execution of six mutinous militiamen, the imposition of martial law, the suspension of the writ of habeas corpus, and his defiance of the orders of a federal judge. Jackson defended his actions on military necessity and muted criticism for a time. Over the next several years, he negotiated land cessions in Georgia, Alabama, Mississippi, Tennessee, and Kentucky at treaties with the Cherokees, Choctaws, and Chickasaws, presaging his controversial presidential policy of Indian removal to accommodate advancing white settlement. In 1818 he led troops into Florida to suppress the Seminoles, again seized Pensacola, and ordered the execution of two British subjects suspected of arming the Seminoles. The action precipitated a brief international crisis and a long congressional investigation. Jackson's vindication came in 1821, when he supervised the transfer of the Floridas to the United States under the 1819 Adams-Onis Treaty. He later served as governor during the establishment of territorial government.<br><br>Jackson resigned his army appointment on June 1, 1821, and retired to Tennessee. In 1822 the state legislature nominated him for president of the United States, a move seconded by other states, and in 1823 elected him to the U.S. Senate (he resigned in 1825). Jackson consistently denied that he sought the presidency, but declared it his duty to serve if elected. In the presidential campaign of 1824 Jackson received both a popular and an electoral plurality over William H. Crawford, John Quincy Adams, Henry Clay, and John C. Calhoun. When the House of Representatives gave the presidency to Adams, and Adams appointed Clay secretary of state, Jackson labeled the transaction "a corrupt bargain" that violated the will of the voters. On that charge, Jackson's advisors launched the presidential campaign of 1828.<br><br>The ensuing presidential canvass was one of the nation's dirtiest. Pamphlets and partisan newspapers probed the public and private lives of Jackson and Adams, particularly Jackson. The parade of "juvenile indiscretions" seemed endless, but the insinuations of moral depravity as evidenced by the Jackson's marriages proved most painful. Jackson, however, was elected president that fall. On December 22, 1828, Rachel Jackson passed away, and her husband charged that her death had been hastened by the campaign slanders.<br><br>In January 1829, the widowed Jackson left Tennessee for his inauguration. Reform was the keynote of the bereaved Jackson's inauguration address in March 1829, and reform remained the theme of his two terms as president. He departed from practice by rejecting Adams's cabinet. As the Senate recessed in mid-March, Jackson initiated a series of removals and appointments that his opponents denounced as the spoils system. Jacksonians defended the practice as a restoration of honesty and integrity and the destruction of entrenched privilege. Cabinet squabbles erupted during Jackson's first term that ended in a reconstitution of the cabinet and the resignation of Vice-President John C. Calhoun. Nevertheless, Jackson maintained his commitment to reform and executed his will through the exercise of the veto, killing the Maysville Road bill and the recharter of the Bank of the United States.<br><br>The recharter of the bank became the focus of the presidential campaign of 1832 between Jackson and Clay. The real issue, however, was Jackson. Analysis of Jackson's election victory showed a decline in his support and the rise of a strong opposition. During his second administration, Jackson continued to use the veto and took unprecedented actions: in 1833, without congressional approval, he ordered federal deposits removed from the Bank of the United States and placed in state banks, forcing the resignation of the cabinet officer who refused his directive; and in 1836 he issued the Specie Circular, which required the payment of government debts in hard money. Jackson's 1833 proclamation against nullification defining the Union as indissoluble assaulted state's rights. In consequence, his opponents denounced him as a tyrant, "King Andrew I," and united to form the Whig Party. By the end of the decade, the second American party system had emerged in all the states.<br><br>Jackson returned to the Hermitage in early 1837. Many still considered him a hero and the spokesman of the common man. He spent the remainder of his years in retirement, consulting with numerous politicians on the issues of the day, entertaining frequent visitors, and managing his farm. His health, much damaged by dueling wounds and the rigors of military campaigns, continued to decline. In 1845, at age seventy-eight, Jackson died at the Hermitage and was buried in the Hermitage garden two days later.<br><br><big>Suggested Reading:</big><br><br>Harold D. Moser et al., The Papers of Andrew Jackson, 5 vols. to date (1981- );<br><br> John Spencer Bassett, Correspondence of Andrew Jackson, 7 vols. (1926-35);<br><br> James Parton, Life of Andrew Jackson, 3 vols. (1860); Robert V. Remini, Andrew Jackson, 3 vols. (1977-84);<br><br> Daniel Feller, The Jacksonian Promise: America, 1815-1840 (1995).<br><br><i id="first">Copyrighted material from</i><i id="copyright">The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+ <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item active">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>	
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

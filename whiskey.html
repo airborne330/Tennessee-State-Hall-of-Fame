@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WHISKEY</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,whiskey,tennessee whiskey,tennessee distilleries">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+.col-sm-12 .row h2 {
+	text-align: center;
+}
+#nav ul li a{
+	border-radius: 20px;
+}
+.row #mySidenav .closebtn {
+	background-color:#b4943f;
+}
+	 	  @media screen and (max-width:400px){
+			  .col-sm-12 .row p {
+				  float:left;
+			  }
+		  
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+.row.content #info .display {
+	font-size: 12px;
+}
+.display figcaption a {
+	padding:0;
+	margin:0;
+}
+#info .display {
+border: 5px solid #BDBDBD;
+background: #E0E0E0;
+padding: 5px;
+margin:0px;
+	    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+	  .center-block{
+		    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	  }
+#two.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+@media screen and (max-width: 400px) {
+	 .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  @media screen and (max-width: 400px) {
+	 #two.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+.display figcaption p {
+	text-align: center;
+}
+#info .display figcaption {
+	text-align: center;
+}
+#information {
+	margin-right:10%;
+	margin-left:10%;
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+	  #navbar{
+		  float:left;
+	  }
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.navbar.navbar-inverse {
+		background-color:#ffffff;
+}
+	  .navbar.navbar-inverse ul{
+		  margin-left:2.5%;
+	  }
+	  .navbar.navbar-inverse li a:hover{
+		  color:#ffffff;
+		  background-color:#8b0000;
+	  }
+	  #active{
+		  background-color:#8b0000;
+		  color:#ffffff;
+	  }
+	  .container-fluid.text-center footer{
+		  background-color:#8b0000;
+	  }
+
+.row.content #info .read-more-wrap {
+	border: 3px solid #ffffff;
+	height:auto;
+}
+.navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size:12px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 12px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size:12px;
+}
+#information .row.content #info {
+	  padding: 2%;
+	border:3px solid #ffffff;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+	 text-align: justify;
+    text-justify: inter-word;
+	font-size:20px;
+}
+#information .row.content .col-md-12.text-left {
+	color:black;
+}
+
+.row.content #firstsection {
+	color:#000000;
+	background: #dacba2;
+	border: 3px solid #ffffff;
+	  text-align: justify;
+    text-justify: inter-word;
+	font-size:20px;
+	margin-bottom: 20px;
+}
+.row.content .col-md-12 #title {
+	color:#ffffff;
+	text-align: center;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}	
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+ 	  <li><a href="religion.html">RELIGION</a></li>
+      <li><a href="cotton.html">COTTON</a></li>
+      <li><a href="tobacco.html">TOBACCO</a></li>
+      <li><a href="mules.html">MULES</a></li>
+      <li><a href="tva.html">TVA</a></li>
+      <li><a href="grandoleopry.html">GRAND OLE OPRY</a></li>
+      <li><a href="graceland.html">GRACELAND</a></li>
+      <li><a href="stjudes.html" >ST.JUDE'S</a></li>
+ 	  <li><a href="whiskey.html" id="active">WHISKEY</a></li>      
+      <li><a href="southern.html">THE SOUTHERN RENASCENCE</a></li>      
+      <li><a href="dollywood.html">DOLLYWOOD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	  	  <a href="stjudes.html" class="previous">&laquo; Previous</a>
+		  <a href="southern.html" class="next">Next &raquo;</a>
+<div class="container-fluid text-center" id="information">    
+  <div class="row content">
+    <div class="col-md-12"> 
+      <h1 id="title">Whiskey</h1>
+  <br><br><br><br>
+		<p id="firstsection">Whiskey distilling in Tennessee began in the late eighteenth century. East and Middle Tennessee were particularly well suited for the production of sour mash whiskey, and by the mid-nineteenth century whiskey manufacturing had developed into one of the state’s major industries. Production waned in the late nineteenth century, as first state and later national prohibition caused most distilleries to cease operation or move elsewhere. Today, Tennessee’s largest and most prominent distilleries, Jack Daniel and George Dickel, are located in counties that remained “dry” after the repeal of prohibition.</p>
+    </div>
+    	<div class="col-md-12" id="info">
+
+				<figure class="display" style="max-width: 100%"><img class="center-block" src="images/Whiskey_barrels.jpg" alt="Whiskey barrels" style="max-width: 100%"><br>
+			<figcaption style="font-style:italic"><p>Whiskey barrels stacked in the Jack Daniel's destillery, Lynchburg, Tennessee</p><br><a href="https://commons.wikimedia.org/wiki/File:Whiskey_barrels.jpg" target="_blank">"Whiskey barrels in the Jack Daniels destillery, Lynchburg, Tennessee."</a> by <a href="https://en.wikipedia.org/wiki/Lewis_Hine" target="_blank">Ahoerstemeier</a>, <a href="https://commons.wikimedia.org/wiki/User:Ahoerstemeier" target="_blank">National Archives and Records Administration</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a> / A derivative from the <a href="https://commons.wikimedia.org/wiki/File:Whiskey_barrels.jpg" target="_blank">original work</a></figcaption></figure>
+			<br><br>
+				By Lynne Tolley, Lynchburg<br><br>The oldest registered distillery in the nation, Jack Daniel distillery is located in Lynchburg in Moore County.  Established by Jasper "Jack" Daniel in 1866, the distillery produces sour mash whiskey. Daniel located the distillery near his birthplace, recognizing that what is now Moore County was an ideal site for whiskey production due to natural advantages such as the presence of iron-free water from the distillery's cave and the ready availability of corn,rye, and barley malt to produce the fermentable mixture called "mash". <br>Daniel's whiskey quickly won national recognition and in 1904 received the gold medal at the Louisiana Purchase Exposition in St.Louis.  In 1907 Daniel transferred the distillery to his nephew Lem Motlow, who moved the operation to St.Louis in 1910, after Tennessee enacted prohibition.  In 1938, after vigorous campaign by Motlow, Moore County, which chose to remain "dry", voted to permit the return of Jack Daniel Distillery to its historic site.<br><br>Today, the distillery attracts annually more than 250,000 people who make the journey to Lynchburg to tour the barrelhouse, distillery, and rickyard.  Although whiskey production accounts for a major segment of the Moore County economy, the county remains dry, and visitors are restricted to the purchase of commemorative bottles of Jack Daniel's Tennessee Whiskey.  Many visitors also dine at Miss Mary Bobo's Boarding House, where they are served southern family-style dinners presided over by Lynne Tolley.  The boarding house, listed on the National Register of Historic Places, is one of the oldest buildings in Lynchburg.  Its most famous proprietor was Mary Bobo, who operated a boarding house and restaurant in the Greek Revival-style dwelling for most of the twentieth century.  The historic office and early works of Jack Daniel Distillery also are listed on the Nationl Register.<br>In addition to Jack Daniel's Tennessee Whiskey, the distillery produces Gentleman Jack Rare Tennessee Whiskey, Jack Daniel's Country Cocktails, and Jack Daniel's Single Barrel Tennessee Whiskey.  Adjacent to the distillery is the Lynchburg historic district, also listed on the National Register of Historic Places.<br><br>By Kevin Cason, Middle Tennessee State University<br><br>Located in Coffee County near Tullahoma, the George Dickel Distillery holds the distinction of being one of only two legal Tennessee distillieries that remain in operation, the other being Jack Daniel Distillery in Moore County.  In the late 1860s, George A. Dickel, a successful Nashville merchant, created a wholesale company that bought barrels of whiskey directly from several regional distillers and distributed them in barrels,jugs, and bottles.  Along with his company partners, V.E. Shwab and McLin Hezikiah Davis, they promoted and sold whiskey throughout the region.  The most popular brand that they marketed was a whiskey from a distillery along Cascade Creek in Coffee County.  The quality of this whiskey was attributed to the excellence of the water from the creek.  Recognizing the popularity of the whiskey, Shwab purchased a two-thirds interest in the distillery in 1888, and eventually George A. Dickel & Company became the sole distributor of the whiskey.  Like many mass-produced products, the company distiguished its whiskey from other competitors by having a distinctive label.  The labels depicted a still with a copper worm and were stamped "George A. Dickel & Company," followed by "Cascade Distillery."<div class="more"> In addition, the product bore the slogan "Mellow as Moonlight."<br>By the time V.E. Shwab gained full control of the Cascade Distillery, George Dickel had been dead four year, having died in June 1894 at the age of seventy-six.  Dickel willed his business interests to his wife, Augusta.  Although he instructed her to sell his share of the business, Augusta chose to keep her share of the distillery with the Shwabs.  After Augusta died, the Shwabs became the owners of the distillery.<br><br>As a result of the Manufacturer's Act in 1910 that stopped the manufacture and sale of alcoholic beverages in Tennessee, dealers, distillers, and brewers announced that they would either close their businesses or move them out of Tennessee.  Although it was illegal to produce liquor in Tennessee, many distillers moved to other states and shipped their liquor into Tennessee.  During this time, the George Dickel Distillery moved from Cascade Hollow to Louisville, Kentucky, where it was produced at the Stitzel Distillery until prohibition hit Kentucky in 1917.  With the ratification of the Eighteenth Amendment prohibiting the manufacture and sale of alcohol in the United States in 1919, distillers had to stop production of their whiskies.<br><br>In 1933, national prohibition was repealed.  Four years later, the Shwab family sold its interest in the distillery, which consisted mainly of the trademark and the recipe for the famous Cascade whiskey, to Schenley Industries in Kentucky.  Although the company manufactured the product with the same recipe, many people complained that the Kentucky quality was not good as whiskey made in Cascade Hollow.  Believing that they would have a better product if they returned to Coffee County site, the company took steps to manufacture the whiskey at the original site.  Since Coffee County had remained dry after the repeal of Prohibition, the company necessitated a special referendum to approve the manufacture locally.  In 1958, with the passage of appropriate legislation by the voters of Coffee County, Schenley Industries sent Ralph L. Dupps to rebuild the distillery in Cascade Hollow.<br><br>In order to rebuild, Dupps acquired 850 acres of land about a mile from the original Cascade Hollow site.  Although the distillery was in a new location, it continued to use the Cascade Branch water soutrrce.  By July 1959, the first mash was produced, but none of the whiskey could be marketed because it had to age for six years.  In 1964, the George Dickel company began selling its whiskey.  In 1994, the Cascade Distillery site was listed on the National Register of Historic Places for it's archeological significance to the understanding of the late-nineteenth-century whiskey industry of southern Middle Tennessee.  Many of the physical remains such as the foundations of the still house and the spring dam can be seen on the site.  The nearby Dickel Distillery continues to manufacture its product and has become a tourist attraction with a distillery tour, a visitor center, and a gift shop known as the "George Dickel General Store."<br>
+			Editor's Note. In 2016, a new distillery, "Old Glory," began operation in Clarksville.<br><br><br><big>Suggested Reading:</big><br><br>Tennessee Historical Commission,"Cascade Distillery Site" (1994).<br><br> Kay Baker Gaston, 'George Dickel Tennessee Sour Mash Whiskey: The Story Behind the Label,"Tennessee Historical Quarterly 57 (1998), no.2: 150-67.<br><br> Paul E. Isaac, Phohibition and Politics: Turbulent Decades in Tennessee, 1885-1920 (1965).<br><br><i id="first">Copyrighted material from the</i><i id="copyright"> Tennessee Encyclopedia of History and Culture</i><i id="last">,courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid text-left">
+  <p>Copyright &copy; 2017 THOF</p>
+</footer>
+
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+</html>

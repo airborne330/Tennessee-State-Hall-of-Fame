@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Austin Peay</title>
+    <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,Austin Peay,governor austin peay,">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	 html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 	
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+          <a href="alvinyork.html" class="previous">&laquo; Previous</a>
+		  <a href="willhandy.html" class="next">Next &raquo;</a>
+      		<img src="images/AustinPeay.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+          							By Dan Pierce , Western Carolina University<br><br>Austin Peay, a successful and progressive governor during the 1920s, was perhaps best known as the governor who signed the infamous Butler (anti-evolution) Bill into law. Through administrative reorganization and advocacy of reform-minded legislation, Peay influenced the state during the four and one-half years in office more so than any other governor of his era. By the time of his death, Peay had completely reorganized state government, improved the tax system, reformed education, expanded and improved the road system, established Tennessee's first state park, and assured the establishment of the Great Smoky Mountains National Park. Although his policies benefited most Tennesseans, Peay focused his efforts on reviving stagnant agriculture and improving the quality of rural life.<br><br>When Peay took office in 1923, he inherited the leadership of a state over three million dollars in debt, and ranked forty-ninth in per capita expenditures for government services. Tennessee's educational system ranked last in teacher salaries and forty-third in per-pupil expenditure; adult illiteracy was high. The state had only 244 miles of paved state highways, and bridges spanned few of its major rivers. State appropriations often ended up in the pockets of county courthouse gangs and were funded by a property tax which unfairly weighed on Tennessee's depressed farming community.<br><br>Peay began his administration with improvements for the notoriously inefficient state government. Prior to Peay, Tennessee's governors exercised little power--other than the veto--and maintained little control over the bureaucracy they ostensibly supervised. In 1923 Peay pushed through the Administrative Reorganization Act, which gave the governor hiring and firing power over the executive branch bureaucrats, greater control over the state budget, and reorganized administrative agencies to make them more professional and efficient. He sought an end to the wasteful expenditure of state money and developed a reputation as a budget watchdog.<br><br>Peay also tackled Tennessee's antiquated and inequitable revenue system. Most of the state's revenue came from a property tax that produced inadequate funds for state expenditures. The governor pressed for legislation providing for new sales taxes on gasoline (for road building) and on tobacco products (for education). With new revenues from these taxes, automobile license fees, and short-term bonds, Peay cut the property tax and expanded government services. At the same time, due to new efficiency measures, the state's $3 million deficit turned into a $1.2 million surplus.<div class="more">Peay's next challenge was to improve Tennessee's roads and its educational system. Under Peay, more than half of the state's total expenditures went to road projects. By the time of his death in 1927, Tennessee's system of paved roads had expanded from 244 miles to over 4,000 miles, with a paved highway connecting Memphis and Bristol, four paved routes that crossed the state north to south, and seventeen new bridges over major rivers. In education, Peay sponsored legislation that established a state salary schedule, standardized licensing requirements for teachers, and created an equalization fund that guaranteed an eight-month school year in most public elementary schools. He also greatly increased funding for the University of Tennessee, which he justified as an aid to the Tennessee farmer. His efforts produced a new agricultural junior college at Martin (now the University of Tennessee at Martin) and a teachers college at Clarksville (now Austin Peay State University) and pushed through a $1 million appropriation for rural school construction.<br><br>Peay took the lead in promoting public health and conservation. He professionalized the State Department of Health and more than doubled the department's budget for public immunization and for sanitation and disease control. Under the governor's leadership, the legislature created the first state park at Reelfoot Lake and passed a $2 million bond bill for the purchase of land for the Great Smoky Mountains National Park.<br><br>Peay accomplished his reforms with a legislature that often fought him at every turn and only met for a seventy-five-day biennial session. In his last term, he struggled with the Crump machine of Memphis (which viewed him as a potential political threat to U.S. Senator Kenneth McKellar). Crump's supporters allied with business interests that opposed much of Peay's program and with country politicians who lost power with the centralization of state government. The Democratic Party was split into pro- and antiadministration factions. Despite these problems, his considerable political skills and his reputation for fairness and integrity made Governor Austin Peay an effective chief executive. <br><br><big>Suggested Reading:</big><br><br>David D. Lee, Tennessee in Turmoil: Politics in the Volunteer State, 1920-1932 (1979);<br>,<br> Joseph T. Macpherson, "Democratic Progressivism in Tennessee: The Administrations of Governor Austin Peay, 1923-1927," East Tennessee Historical Society Publications 40 (1968): 50-61.<br><br><i id="first">Copyrighted material from</i><i id="copyright">The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical</i></div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+           <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item active">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

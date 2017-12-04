@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>William Christopher, "W.C" Handy</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,will handy, W.C Handy, W.C Handy music">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+	.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}		 
+  </style>
+	</head>
+	<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+          <a href="austinpeay.html" class="previous">&laquo; Previous</a>
+		  <a href="cordellhull.html" class="next">Next &raquo;</a>
+      		<img src="images/W.C.Handy.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         			<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+						By Teresa Biddle-Douglas of Middle Tennessee State University<br><br>Handy's love for music grew in spite of his family's lack of encouragement. At school he learned basic music principles through vocal instruction and began to share his teacher's interest in folk singing. As a teenager, he met Memphis violinist Jim Turner, who had come to Florence to begin an orchestra. Enticed by Turner's glamorous talk of Beale Street, Handy obtained a cornet and practiced secretly. Handy worked with Turner's group, earning a decent salary. He hoped his efforts would win his parents' approval, but by this time, nothing could deter Handy from his musical ambitions. Against his parents' wishes, Handy played, sang, and attended dances. At age fifteen he joined a local minstrel show as first tenor.<br><br>Before embarking on a full-fledged musical career, Handy taught school and worked for an Alabama pipe company. He continued to sing and play with various groups, most of which were temporary informal troupes. In the early 1890s Handy's first real attempt to make music his profession landed him in St. Louis, broke and alone. A low point in his life, the hard times he experienced in that city later inspired his most famous work, "St. Louis Blues" (1914).<br><br>In August 1896 Handy's luck changed when he received an offer to join Mahara's Minstrels, a Chicago-based musical company, as a cornet player. With this group, Handy gained valuable experience and matured as a professional musician and composer. He advanced quickly to the position of bandleader and began to add his own compositions and arrangements to their repertoire. The group's extensive travels throughout the United States, Canada, Mexico, and Cuba expanded Handy's musical knowledge and skill by introducing him to a variety of new rhythms and sounds. In 1900 Handy, by now married, left the Minstrels to accept a position at the Agricultural and Mechanical College in Huntsville, Alabama. After only two years of leading the school's band and orchestra, however, Handy rejoined the Minstrels for one additional year. By this time his reputation as a bandleader was becoming well known, and in 1903 he received offers from both a white Michigan municipal band and a black orchestra associated with the Knights of Pythias in Mississippi. Handy chose the latter even though it was a less prestigious and profitable position.<br><br><div class="more">Handy made frequent trips to Memphis, and in 1907 he decided to make the city, with its strong African American entertainment scene, his home. The Gayoso Street theater district, which included Beale Street, was home to such popular venues as Tick's Big Vaudeville, the Dixie, the Lyric, and the Savoy. Here, Handy published his first work, "The Memphis Blues." Initially titled "Mr. Crump," it served as a 1909 campaign song for Memphis mayoral candidate Edward H. Crump, who had hired Handy's band to promote his platform. The crowds went wild for the tune Handy had composed, and in 1912, after it was rejected by several popular music publishers, he published the sheet music under the new title. With limited sales and mounting expenses, Handy sold the rights to "The Memphis Blues" to a New York composer for one hundred dollars. The new owner added lyrics and republished the song, selling over fifty thousand copies by 1913. Although Handy did not benefit financially from his work, he gained a huge following, which established him and Memphis as important sources of the new musical style.<br><br>Handy, now wiser to the business side of music, formed a partnership with lyricist Harry H. Pace and began to capitalize on his recent notoriety. Located on Beale Street, the Pace and Handy Music Company published a series of blues hits including "Yellow Dog Rag," "Joe Turner Blues," and "Hesitation Blues." Handy's success increased with each new release and paralleled the rising popularity and mainstream acceptance of the blues. His third published composition is perhaps his most successful and best-known work. An immediate hit upon its release in 1914--and again in 1925, when it was recorded by Bessie Smith and Louis Armstrong--"St. Louis Blues" remains a classic blues number.<br><br>In 1917 Pace and Handy moved their business to New York City. The partnership eventually dissolved, but Handy continued to perform and write successfully, and in later life he published his autobiography. By the time of his death in 1958, the blues music that Handy had helped make a commercial success was a well-established and widely accepted American musical style. Handy's works have remained timeless classics over the years and affirm his reputation as "Father of the Blues."<br><br><big>Suggested Reading:</big><br><br>Lynn Abbot and Doug Seroff, "'They Cert'ly Sound Good to Me': Sheet Music, Southern Vaudeville, and the Commercial Ascendancy of the Blues," American Music 14 (1996): 402-55;<br><br> W. C. Handy, Father of the Blues (1941).<br><br><i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+            <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item active">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>		
+<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>		
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>	
+</html>

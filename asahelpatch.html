@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asahel Huntington Patch</title>
+    <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entites that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,Asahel Huntington Patch, asahel patch">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+	.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+           <a href="andrewjohnson.html" class="previous">&laquo; Previous</a>
+		  <a href="horaceharmon.html" class="next">Next &raquo;</a>
+      		<img src="images/A.H.patch.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+          							By Rubye Patch, Clarksville, Tennessee<br><br>Asahel Huntington Patch was the eldest of eight surviving children born on a rugged Hamilton, MA farm to Elisabeth Gould and Capt. Daniel Patch.  He came from a long line of Puritan stock, and grew accustomed to hard work at an early age.  Asahel helped his father haul Wenham Lake “blue” ice by wagon to Boston’s Faneuil Hall.  It was then shipped to distant customers. In addition, he took charge of raising the family poultry.  This included shelling by hand the hard, flinty corn of that rocky area.  His boyhood dream was to invent a reasonably priced portable sheller that every small farmer could afford.<br><br>As a teenager, Patch walked to Boston to take a job as a grocery store porter.  He slept under the store counter to be ready by daybreak to deliver groceries by cart.  One customer, Oliver Ames, Sr., whose business covered the top floor of Quincy Market, noticed the boy’s punctuality and diligence.  Ames offered him an apprenticeship in his newly established Worcester, MA plow factory.  There, he gained valuable experience, and in three years’ time, Patch was made superintendent.<br><br>However, he yearned to “Go West,” and Patch settled in Louisville, KY in 1850, with the Miller and Wingate Seed Co.  He convinced Mr. Miller to go into agricultural manufacturing and then helped perfect a grass and grain cutter called the Kentucky Harvester. With the onset of the Civil War, the Union Army curtailed commercial Ohio River traffic.  After the war, another opportunity in plow manufacturing appeared when Benjamin Avery asked Patch to come into his plow manufacturing firm in Louisville as a silent partner. With the Ohio River reopened for trade, business was booming, especially in the North.  After three years Patch decided to retire in 1868, but  they could not agree on the value of the company or how much  Avery needed to pay Patch for a buyout.  Deadlocked for weeks, a settlement was only effected by a mediator. Patch and family returned to Hamilton, MA.  Here he produced his first corn sheller and patented it on April 2, 1872.  This was a small post-mounted machine featured in the May 2, 1872 issue of Scientific American. Even though on the brink of successful inventing, Patch made several disastrous investments.  He had to go back to work.  Then, in 1875, he learned of a plow business for sale on the Cumberland River in Clarksville, TN, so he and his family made their way south.<br><br><div class="more">Unfortunately, few southerners would buy from a Yankee in the postwar South.  After ten struggling years, the business folded.  With no money, no job, and no friends, at age 60, Patch fell back on his boyhood dream.  At his kitchen table, with faith, skill and a pocketknife, he whittled a model of a portable corn sheller from cook-stove kindling and glued the pieces together with honeycomb.  He then made a cast-iron version.He sent his teenage son, Benjamin, to Mr. Henry Fretch, a merchant on the Clarksville town square to demonstrate the portable cast-iron machine.  Fretch ordered a dozen and paid up front.  Later, at another demonstration at Fox and Smith Hardware store in Clarksville, Benjamin tightened the main screw so hard that it broke in half.  Fox said if the sheller wouldn’t break, he’d also take a dozen.  This statement prompted the lifetime guarantee of the Black Hawk Corn Sheller, a name chosen to honor the Indian chief who was strong and determined.<br><br>The Black Hawk won the first industrial award at Chicago’s 1893 World’s Fair and the bronze medal at the 1903 St. Louis Exposition.  His put his invention into production at a foundry on Drane Street in Clarksville, and by its closing in 1954, 1,000,000 Black Hawks had been shipped worldwide.   The only complaints were: “It don’t pick out the rotten kernels,” and dealers said “it never wears out.” <br><br><big>References:</big><br><br>Gould, Benjamin Apthorp: The Family of Zaccheus Gould, Topsfield MA.  Lynn, Mass.: Thos P. Nichols,  publisher, 1895.<br><br>
+						Patch, Benjamin Avery: Talk given to the Rotary Club, Clarksville, TN.  1930’s.</div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+           <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item active">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>		
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

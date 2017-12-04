@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andrew Johnson</title>
+    <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,Andrew Johnson,tennessee statesman">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+          <a href="jamespolk.html" class="previous">&laquo; Previous</a>
+		  <a href="asahelpatch.html" class="next">Next &raquo;</a>
+      		<img src="images/andrewjohnson.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+          							By Paul H. Bergeron , University of Tennessee<br><br>Born in a log cabin on December 29, 1808, in Raleigh, North Carolina, Andrew Johnson knew abject poverty and personal tragedy almost from the very beginning of his life. Jacob Johnson, Andrew's father, a landless and illiterate worker in Raleigh, died unexpectedly a few days after Andrew's third birthday. At ten years of age, Johnson was apprenticed to work for James J. Selby, a tailor. In that shop, he learned two valuable lessons: how to perform the tailor's craft and how to read. After five years in Selby's shop, Johnson ran away from Raleigh, but he returned some two years later in an unsuccessful attempt to make peace with Selby. In 1825 or early 1826 Johnson again left, heading west to seek a better fortune.<br><br>He wandered to Mooresville, Alabama, and then to Columbia, Tennessee, and secured employment in tailor shops at both places. After a few months, however, Johnson returned to Raleigh and escorted his mother and stepfather Turner Doughtry to Tennessee. They eventually arrived in Greeneville in September 1826. There Johnson found work in a tailor shop, and, more importantly, he found Eliza McCardle. In the spring of 1827 the two teenagers (Johnson was eighteen and Eliza sixteen) married and made Greeneville their permanent home.<br><br>Two years later, twenty-year-old Andrew Johnson was chosen alderman, a post to which he was reelected several times, and in 1834 he became Greeneville's mayor. Meanwhile, his tailoring business prospered, and his family increased to include two daughters and two sons. As a consequence Johnson purchased a tailor shop and a fine brick residence. Once he learned to write, Johnson became increasingly absorbed in intellectual pursuits as he prepared himself for more impressive and prestigious areas of public service.<br><br>In 1835 Johnson successfully ran for a seat in the lower house of the state legislature. At this point in his early political career he generally maintained political independence while leaning toward the newly emerging Whig Party. In fact, he backed Hugh Lawson White for president in 1836. His refusal to support internal improvements legislation favored by his constituents, however, cost him reelection in 1837. Two years later, Johnson regained his legislative seat. By this time, he had made an irrevocable commitment to the Jacksonian Party. Democrats named him to be one of the two state at-large presidential electors in 1840, and Johnson campaigned throughout Tennessee. Subsequently, he sought and won a state Senate seat the next year. But after three legislative terms, Johnson looked for new challenges.<br><br>He found them in the U.S. House of Representatives, where he served for ten years, 1843-53. Here he first introduced his famous Homestead Bill in the spring of 1846 and persisted until the House (but not the Senate) finally approved it in 1852. He sparred with President James K. Polk over patronage, supported the Compromise of 1850, and introduced constitutional amendments to provide for the direct election of the president and U.S. senators. During his tenure as a representative, he bought a larger house in Greeneville. In 1852 his fifth child, Andrew, was born; in that same year, the Whig-dominated legislature redrew the congressional districts to make Johnson's reelection nearly impossible.<br><br>Faced with this reality, Johnson made a successful race for governor, and he was reelected in 1855. The governor's office was weak by design, and Johnson accomplished very little, other than an increase in the revenues to support public schools. His principal achievement was to gain extensive public exposure, though, and thereby enhance his future career.<br><br>In the fall of 1857, the legislature's choice of Johnson as U.S. senator surprised few. Once in the Senate, he immediately proposed his Homestead Bill, and he reintroduced it two years later. The bill finally emerged from both houses of Congress in late spring 1860, only to be vetoed by President James Buchanan--much to Johnson's dismay. That year's real excitement emanated from the presidential campaign, which involved four political parties. Johnson had flirted with the possibility of his own nomination, but the breakup of the Democratic Party at the Charleston convention had ruined those plans. Johnson campaigned for John C. Breckinridge, the Southern Democratic candidate, but the state went for John Bell, the Constitutional Union nominee.<br><br>In the wake of Abraham Lincoln's election and amid threats of secession, Johnson returned to Washington. A few days later he delivered his famous speech against secession, in which he staked out his claim as a Southern Unionist. In a February 1861 referendum, Tennessee voters refused to endorse a secession convention call, yet Johnson knew he had to return home to fight against the surging tide of secession sentiment. He finally left in April, the month the Civil War began.<br><br>Back in East Tennessee, Johnson quickly allied with former political opponents such as Thomas A. R. Nelson, William G. Brownlow, Horace Maynard, and others who shared his strong support of the Union. Accompanied by these new friends, he toured the region and railed against secession and the Confederacy. After the June referendum, in which Tennessee voters embraced secession, though, a fearful Johnson hastily left the state and made his way into Kentucky and eventually back to Washington.<br><br>At that juncture he could scarcely have imagined his next assignment: military governor of Tennessee. After the Federal capture of Forts Henry and Donelson, followed by the occupation of Nashville (all in February 1862), President Lincoln sent Johnson to Tennessee for the purpose of restoring civil government and bringing the state back into the Union. Johnson arrived in Nashville in late March, and for the next three years, he struggled to accomplish this goal. In the process, he was often ruthless, dictatorial, accommodating, and strongly pro-Union. He arrested and imprisoned newspaper editors, local officials, and clergymen--anyone deemed to be a threat. But Federal and Confederate military activities in Tennessee had as much bearing upon Johnson's role as governor as anything else. Indeed, both his office and his person were jeopardized from time to time by Confederate successes in the Middle Tennessee area.<br><br>The slavery question drove a wedge between the state's Unionists, and Johnson eventually took a stance in favor of abolishing slavery, while the more conservative Unionists refused to do so. This schism also hampered the governor's efforts to restore civilian government. Moreover, Johnson set forth more stringent loyalty oaths than Lincoln required, further alienating substantial numbers of Unionists--particularly at the time of the 1864 presidential campaign.<br><br><div class="more">Johnson, needless to say, had more than a passing interest in the election; after all, Lincoln had placed him on the ticket as the vice-presidential nominee. In the victorious campaign's aftermath, however, Johnson still had some unfinished business, namely, the establishment of civilian government in the state. Accordingly, he sanctioned a call for a January 1865 convention of Unionists. This unofficial Nashville gathering established dates for a referendum to abolish slavery and an election of gubernatorial and legislative officers. By late February, Johnson could delay his departure no longer if he wanted to arrive in Washington for the inauguration ceremonies. But the question of the readmission of Tennessee remained unresolved.<br><br>This longtime Democrat and resident of a Confederate state arrived in town to be sworn in as vice-president. Johnson's apparent intoxication that March day stirred negative reactions, but not for long. Six weeks later, on the night of April 14, an assassin's bullet ended Lincoln's life. The next morning, Johnson was sworn in as the seventeenth president.<br><br>The stunned nation expectantly awaited Johnson's leadership. He did not disappoint; indeed, the next several months constituted his "finest hour." With Congress adjourned, Johnson had a free hand, and he took advantage of the situation. In May, for example, he extended amnesty and pardon to all ex-Confederates who took an oath of allegiance (except for those who fell under fourteen different exemptions). Moreover, he appointed provisional governors for seven of the former Rebel states. Throughout the summer and fall months, these states went about the business of holding elections and constitutional conventions. Meanwhile, Johnson granted thousands of individual pardons to repentant ex-Confederates. When Congress convened in December, the president bragged that the restoration of the southern states had been accomplished.<br><br>But Congress had different ideas. Its members ushered in 1866 with two significant measures: the Freedmen's Bureau bill and the Civil Rights bill. Johnson vetoed both and thus assured that the year would be one of developing tension between the executive and legislative branches. Congress also approved the Fourteenth Amendment, but the president openly discouraged southern states from ratifying it. Ironically, his home state of Tennessee accepted the amendment (all other Confederate states rejected it) and thereby successfully gained readmission to the Union in July 1866. This enabled Johnson's son-in-law David Patterson to claim his seat in the U.S. Senate and permitted Tennessee to escape Reconstruction.<br><br>If 1866 was a period of developing tension, the following year was one of open warfare between the president and Congress. Johnson chose to veto every major piece of legislation, including the three Reconstruction bills, the Tenure of Office act, and the District of Columbia Franchise law. Congress had no problem overriding these vetoes. Johnson fought back in the summer of 1867 by removing two of the five district commanders and by suspending Secretary of War Edwin Stanton. These actions fueled Radical intentions to get rid of the president.<br><br>Not surprisingly, in 1868 the House voted to impeach Johnson, and the Senate convened to hear the case against him. The chief charge revolved around the president's alleged violation of the terms of the Tenure of Office act (by the removal of Stanton), but the real issue was political power. Eventually, in May, the Senate acquitted Johnson of the impeachment charges, but by then he was a greatly diminished leader. Yet he continued to veto congressional measures, including the admission of seven ex-Rebel states that had finally ratified the Fourteenth Amendment and sought to reenter the Union.<br><br>Even in his dark moments, Johnson clung to the unrealistic hope that he might be nominated for president by the Democratic Party in July. But Democrats named Horatio Seymour to be their standard-bearer, and Republicans rallied around General U. S. Grant. All knowledgeable persons accurately predicted Grant's victory in November. Meanwhile, Johnson simply marked time as he awaited the end of his troubled presidency in March 1869.<br><br>Cheered by friendly crowds, he returned to Tennessee. Shortly afterwards, a restless Johnson hit the campaign trail in order to line up support for election to the U.S. Senate. Despite his best efforts, however, he lost by a close legislative vote in October 1869. Undaunted by this setback, three years later he once more campaigned for public office; he did not seem to know what else to do. This time he sought the at-large U.S. representative seat, but finished third in the contest. That defeat only whetted his appetite for new challenges, and in 1874 he launched another bid for a U.S. Senate seat. In the January 1875 legislative voting, Johnson finally emerged victorious. "Thank God for vindication" was his ardent response. When he participated in a special session of the Senate in March, he assumed the seat vacated by his longtime foe William Brownlow. At the session's end, he returned to Greeneville, a place he had come to despise because it lacked the allure and fulfillment of the political arena. Four months later, he suffered a stroke and died on July 31. Wrapped in an American flag with his head resting on a copy of the Constitution, he was buried in Greeneville to await the judgment of history and historians.<br><br><big>Suggested Reading:</big><br><br>LeRoy P. Graf, Ralph W. Haskins, and Paul H. Bergeron, eds., The Papers of Andrew Johnson, 14 vols. to date (1967- );<br><br> Peter Maslowski, Treason Must be Made Odious: Military Reconstruction and Wartime Reconstruction in Nashville, Tennessee, 1862-1865 (1978);<br><br> James E. Sefton, Andrew Johnson and the Uses of Constitutional Power (1980);<br><br> Hans L. Trefousse, Andrew Johnson: A Biography (1989).<br><br><i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society</i></div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+           <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item active">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

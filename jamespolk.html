@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>James K. Polk</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,James K. Polk, james polk, president james polk">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+  padding: 2%;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  border:3px solid #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+         <a href="andrewjackson.html" class="previous">&laquo; Previous</a>
+		  <a href="andrewjohnson.html" class="next">Next &raquo;</a>
+      		<img src="images/jameskpolk.jpg" id="williamblount" class="img-responsive" width="75%">
+          </div><!--/row-->
+         		<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+						By Wayne Cutler , University of Tennessee<br><br>James K. Polk, a native of North Carolina, served one term as United States president, 1845-49; won election seven times to Congress and presided over the U.S. House as its Speaker for the last four of his fourteen-year tenure (1825-39); served one term as governor of Tennessee, 1839-41; and represented Maury County in the Tennessee General Assembly, 1823-25. A lifelong devotee of Thomas Jefferson's political creed and a loyal son of Andrew Jackson's democracy movement, Polk holds a unique place in American history as the first "dark horse" candidate for president and as the first former Speaker of the House of Representatives to serve as president.<br><br>The son of Samuel and Jane Knox Polk and the eldest of their ten children, young James moved in 1806 with his family from their farm in Mecklenburg County, North Carolina, to Maury County, Tennessee, where he attended common schools from 1808 until 1810. Two years of recurring illness ended in 1812 when Ephraim McDowell of Danville, Kentucky, performed a lithotomy procedure and restored Polk to health. Less than a year after his surgery, he began preparation for college and studied Latin under the tutelage first of a local Presbyterian minister, Robert Henderson, and then Samuel P. Black, master of Bradley Academy in Murfreesboro. Entering the University of North Carolina as a sophomore in the fall of 1815, Polk gave himself fully to his studies and won first honors in his class at each of the college's semiannual examinations.<br><br>Upon completion of his degree in 1818 Polk commenced legal studies in the law office of Felix Grundy, a renowned Nashville trial lawyer and member of the general assembly. Impressed with his young law clerk, Grundy sponsored Polk's election in 1819 to the post of chief clerk of the Tennessee Senate, which then held its biannual sessions in Murfreesboro. Licensed to practice law the following year, Polk returned to Maury County and started a legal practice with Aaron V. Brown. Election to the Tennessee House in 1823 again took the young lawyer-politician to Murfreesboro in the fall. On New Year's Day next he and Sarah Childress, daughter of Joel and Elizabeth Whitsitt Childress, married and so formed a union of two influential families in Rutherford and Maury Counties.<br><br>At the young age of thirty Polk defeated the one-term incumbent, James T. Sandford, for a seat in Congress and began a distinguished career in the House marked by four years of opposition to the administration of John Q. Adams and ten years of loyal support for Jackson and Martin Van Buren. In his first floor speech (March 13, 1826) Polk argued for a constitutional amendment that would have provided for popular election of the president and thereby avoid recurrence of the alleged corrupt bargain between Adams and Henry Clay. Polk gained notice through his opposition to Adams's appointment of ministers to attend the Panama Congress on grounds that the United States should not abandon its tradition of neutrality or participate in a diplomatic agenda in which the objectives were enveloped in uncertainty and darkness. In his second and third terms in Congress he sat on the House Committee of Foreign Affairs before moving in 1832 to the House Committee of Ways and Means.<br><br>Polk's work as chairman of a House Select Committee on surplus revenue in 1830-31 established his credentials in the area of government finance, and in his report (January 28, 1831) he expressed in the strongest of terms his opposition to what he termed political "log-rolling." First, he could find no constitutional sanction for internal improvements undertaken either directly by the general government or indirectly through the distribution of surplus revenues to the states. The framers of the Constitution did not grant the general government those consolidating powers precisely because buying voter support, apart from undermining republican notions of civic virtue, would engender prejudices, excite sectional feelings, and destroy the harmony of the Union. Instead of looking to the general welfare, congressmen would engage in disreputable competitions for funding local works that in their appeal to special interests could only result in the corruption of public morals.<br><br>Polk led the House minority in its fight against rechartering the Second Bank of the United States in 1832, and he fully supported Jackson's veto of the Bank bill. At the start of the second session Polk moved to the Committee on Ways and Means and led minority members in exposing the Bank's attempt to block the administration's paying off the government's remaining 3-percent stocks, most of which were held by European creditors. In his report Polk argued that the Bank could not be trusted to manage the people's money and hinted at the possibility of removing the government's deposits. His opposition to the Bank's recharter and his exposure of its manipulations placed him near the top of the Bank's enemies list, but the Bank's branch in Nashville could not bring him down in the August election, which Polk won easily.<br><br>Jackson's supporters commanded a majority in the next Congress and, of course, placed Polk at the head of the Ways and Means Committee. Polk backed Jackson's removal of federal deposits to state banks, and later as Speaker he would champion creation of a treasury system entirely independent of the banking corporations. The issue remained that of sustaining the broadest diffusion of political and economic power in the agrarian republic, for the Bank war had demonstrated fully the danger of allowing limited liability corporations to set up as rival powers to the elected government.<br><br>In Tennessee the Bank Party worked to undermine Jackson's control of the state by bringing forward Hugh Lawson White as the state's favorite-son presidential candidate and so making his candidacy a litmus test in the 1835 congressional and state elections. Polk saw the purposes of the nomination and campaigned against the "caucus of eleven" Tennessee congressmen and their use of White's popularity. Again Polk won vindication at the polls and the continued backing of the president, who gave the dissidents at home the back of his hand by making Polk Speaker of the House in place of John Bell, leader of the White movement in Tennessee. In the presidential canvass of 1836 Polk campaigned across the state for the national party's nominee, Martin Van Buren, but state pride ruled in favor of White. In the 1837 congressional elections only three of the Jackson loyalists held their seats against the tide of economic panic and Bank money. Polk returned to Congress for a second term as Speaker fully aware that the Tennessee Democracy could not survive another such defeat two years hence; before returning to Washington in the fall of 1838, Polk announced his decision to run for governor in the next election.<br><br>Polk's race to recapture the state for the Democracy proved his loyalty both to Jackson and to Democrats across the Union. With the help of John C. Calhoun's friends in East Tennessee, Polk won the governorship. Depression pressures for cheap money and public works hounded the state legislature, and the new governor accepted the assembly's "log-rolling" as necessary for the survival of his party both at home and in the Union. The price of consistency would be the loss of the issue at the national level, however. He had hoped that hard times would pass before the 1840 presidential election and that his loyal efforts in Tennessee would win him the party's vice-presidential nomination. But the Democratic National Convention chose not to give Van Buren a running mate. Probably no one on the ticket could have spared Van Buren his defeat to the Whig Party candidates, William Henry Harrison and John Tyler.<br><br><div class="more">In 1841, during his own reelection campaign, Polk stood by his support of Van Buren, as he had done in four prior elections, but he lost his first election. In 1843 Polk again ran for the governorship and against the best advice of his political friends held firmly to his support of Van Buren. In doing so he demonstrated most clearly the heavy price of supporting the former president, which did not go unnoticed at the Hermitage.<br><br>Polk won the 1844 Democratic presidential nomination because Andrew Jackson had arranged for the convention to choose a loyal Democrat from the West who could bridge the widening sectional divide and who would support the annexation of Texas. By voting to impose the traditional two-thirds majority rule, delegates to the Baltimore convention assured a choice other than Van Buren. After seven ballots and careful backstage work party leaders brought Polk's name into view, and on the ninth ballot delegates ratified their best chance for electoral victory.<br><br> Although the Democrat and Whig Parties engaged in spirit-building rallies and sloganeering not unlike that of 1840, the expansion issue brought the election a more serious side, for the threat of war with Britain over Oregon and with Mexico over Texas framed the political discourse of the campaign. Henry Clay hurt his candidacy by publishing extended and somewhat varied commentaries on the Texas question, and Polk helped his dark-horse bid by limiting his public utterances to a single statement on the tariff issue. The Liberty Party promised to abolish slavery and chose former Democrat James G. Birney to lead their quasi-religious crusade. Democrat hopes for large-scale Whig defections to Birney did not materialize; indeed, Whig alliances with American nativists in Pennsylvania and New York cost Democrats more votes in those crucial states than were gained from Whigs choosing the abolitionist option. The presidential election of 1844 proved that the American electorate had divided almost evenly between expansion and consolidation, between free trade and protection, between immigrant toleration and native xenophobia, and in the larger context between agrarian rule and market revolution. In the midst of one of the Union's most contentious elections, white male voters gave little thought to expanding the boundaries of freedom for African, native, or female Americans.<br><br>Elected by less than a majority of the voters and the narrowest of popular pluralities, Polk nevertheless took the presidential oath with a determination to direct personally the administration of the general government and, the annexation of Texas already having been approved by the outgoing Congress, to accomplish four major goals: to settle the Oregon boundary dispute with Great Britain, to reduce tariffs, to establish an independent Treasury, and to purchase California. In the course of meeting his objectives he would lead the nation into war with Mexico in the defense of Texas annexation.<br><br>From the Mexican point of view the United States had no right to annex lands west of the Sabine River, and, as promised, Mexico broke diplomatic relations with the United States shortly after Polk's inauguration. Polk sought to restore amicable ties, but Mexican leaders would not accept the loss of their eastern province. For his part Polk could not fail to defend Texas sovereignty or agree to circumscribe its territorial claims, and he did not wish to pursue a long-term defensive border war defending Texas's right of self-determination. Convinced that Mexico intended to move its army into Texas, Polk sent Zachary Taylor and his troops to the Rio Grande, and on April 24, 1846, a Mexican force of sixteen hundred crossed the river and captured an American patrol of sixty dragoons.<br><br>Within a week of learning that the Mexican and American armies had clashed, the British cabinet decided to settle the Oregon boundary dispute and sent instructions to its minister in Washington to agree to a partition at the forty-ninth parallel. Some of Polk's advisors, Secretary of State James Buchanan included, had feared that the British would fight over their control of the Oregon Country and that the United States might find itself engaged on two fronts, a land war in Mexico and a maritime struggle with the British navy. Although militarily the United States stood unprepared for either, the president calculated correctly that Britain would not go to war over its commercial interests in Oregon, Texas, or Mexico. Polk's diplomatic successes in settling the Oregon question and his military strategy for winning the war in Mexico did not bring political consensus at home. Whigs blamed him for giving up half of Oregon and charged him with fighting an immoral war in Mexico.<br><br>Polk made every effort to resolve the Texas issue through diplomacy and offered to purchase Mexico's northern provinces, not because he believed in manifest destiny but because he knew that an agrarian republic like the United States could not close its borders to prevent emigration. Polk's expansion policies postponed the demise of the agrarian republic but did not resolve the problems of a Union bereft of compatible economic, religious, and racial interests. In four tumultuous years he accomplished his basic goals, and true to his word he declined all interest in a second term. Although blessed with a strong constitution, "Young Hickory" fell victim to cholera and died at his home in Nashville on June 15, 1849.<br><br><i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+           <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item active">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>	
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

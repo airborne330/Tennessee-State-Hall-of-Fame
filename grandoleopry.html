@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GRAND OLE OPRY</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,grand ole opry, nashville, Grand Ole Opry">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	 .wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+.row.content #info .display {
+	font-size: 12px;
+}
+.display figcaption a {
+	padding:0;
+	margin:0;
+}
+#info .display {
+border: 5px solid #BDBDBD;
+background: #E0E0E0;
+padding: 5px;
+margin:0px;
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+	  .center-block{
+		    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	  }
+#two.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+@media screen and (max-width: 400px) {
+	 .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  @media screen and (max-width: 400px) {
+	 #two.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+.display figcaption p {
+	text-align: center;
+}
+#info .display figcaption {
+	text-align: center;
+}
+#information{
+		  margin: 0 10%;
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+	  #navbar{
+		  float:left;
+	  }
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.navbar.navbar-inverse {
+		background-color:#ffffff;
+}
+	  .navbar.navbar-inverse ul{
+		  margin-left:2.5%;
+	  }
+	  .navbar.navbar-inverse li a:hover{
+		  color:#ffffff;
+		  background-color:#8b0000;
+	  }
+	  #active{
+		  background-color:#8b0000;
+		  color:#ffffff;
+	  }
+	  .container-fluid.text-center footer{
+		  background-color:#8b0000;
+	  }
+.row.content .col-md-12.text-left h1 {
+	color:#ffffff;
+	text-align: center;
+}
+.row.content .col-md-12.text-left p{
+	background:#dacba2;
+	color: #000000;
+	border:3px solid #ffffff;
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 20px;
+}
+.row.content #info .read-more-wrap {
+	border: 3px solid #ffffff;
+	height:auto;
+}
+.navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .row.content .col-md-12.text-left #grand {
+    display: block;
+    margin: 0 auto;
+	width:250px;
+	border: 4px solid #ffffff;
+	box-shadow: 5px 5px black;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#information .row.content #info {
+	  padding: 2%;
+  background: #dacba2;
+  color: #000000;
+  border-radius: .25em;
+border:3px solid #ffffff;
+	 text-align: justify;
+    text-justify: inter-word;
+	font-size: 20px;
+}
+.row.content #info #grandoleopry {
+	border: 5px solid #7A6A32;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row.content #info .more {
+	 text-align: justify;
+    text-justify: inter-word;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}		
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+ 	 <li><a href="religion.html">RELIGION</a></li>
+      <li><a href="cotton.html">COTTON</a></li>
+      <li><a href="tobacco.html">TOBACCO</a></li>
+      <li><a href="mules.html">MULES</a></li>
+      <li><a href="tva.html">TVA</a></li>
+      <li><a href="grandoleopry.html" id="active">GRAND OLE OPRY</a></li>
+      <li><a href="graceland.html">GRACELAND</a></li>
+      <li><a href="stjudes.html" >ST.JUDE'S</a></li>
+ 	  <li><a href="whiskey.html">WHISKEY</a></li>      
+      <li><a href="southern.html">THE SOUTHERN RENASCENCE</a></li>      
+      <li><a href="dollywood.html">DOLLYWOOD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  		  <a href="tva.html" class="previous">&laquo; Previous</a>
+		  <a href="graceland.html" class="next">Next &raquo;</a>  
+<div class="container-fluid text-center" id="information">    
+  <div class="row content">
+    <div class="col-md-12 text-left"> 
+      <h1>Grand Ole Opry</h1>
+  <br>
+			<p>First broadcast in 1925, the Grand Ole Opry is the longest-running radio show in U.S. history, and its success has made significant contributions to the culture and commerce of Tennessee. The geographic reach of radio station WSM was able to introduce much of the nation to country music and thus advanced the popularity of the art form. With homes at the Ryman Auditorium and the Grand Ole Opry House, it has become an important tourist destination and is largely responsible for Nashville’s prominence as a music business and recording center.</p>
+    </div>
+    	<div class="col-md-12" id="info">
+    	<figure class="display" style="max-width: 100%"><img class="center-block" src="images/Dolly_parton_grand_ole_opry.jpg" alt="Dolly Parton at the Grand Ole Opry" style="max-width: 100%"><br>
+			<figcaption style="font-style:italic"><p>Servicemembers watching Dolly Parton at the Grand Ole Opry from overseas</p><br><a>"Dolly_parton_grand_ole_opry.jpg"</a> by <a>Sgt. Cherie A. Thurlby, USAF</a>, <a href="https://www.defense.gov/" target="_blank">United States Department of Defense</a> is in the <a href="https://wiki.creativecommons.org/Public_domain" target="_blank">Public Domain</a> / A derivative from the <a href="http://Dolly_parton_grand_ole_opry.jpg" target="_blank">original work</a></figcaption></figure>
+   	<br><br>
+    	
+
+				By Charles K. Wolfe , Middle Tennessee State University<br><br>No mass media event has been more associated with the state of Tennessee than the WSM radio program called the Grand Ole Opry. Not only is it the longest-running radio show in U.S. history, but it has become the cornerstone for the dynamic commercial art form called country music. It and its various offspring have become one of the state's major tourist attractions, and its commercial power and attraction have been the primary reasons for Nashville's emergence as a recording and music center.<br><br>Essentially the Opry is a radio variety show in which a series of performers come on stage to sing one or more songs or perform comedy routines, all of which are broadcast live before a theater audience. The performers comprise a regular repertoire company, which at various times has numbered from twenty to one hundred acts, representing a cross section of country music's sub-genres.
+The program had its origins in October 1925, when the Nashville-based National Life and Accident Insurance Company decided, with much fanfare, to open radio station WSM (the initials standing for the company motto, "We Shield Millions"). Within a few weeks, the company hired George D. Hay (1895-1968) as station manager. A native of Attica, Indiana, Hay started his career as a news reporter in Memphis but soon became the announcer for the paper's new radio station WMC. <br><br>By 1924 he had been lured to WLS in Chicago, where he was announcer for one of the nation's first country radio shows, The National Barn Dance. After his arrival in Nashville, Hay announced his intention to start a similar program in Tennessee and began inviting local string bands and performers to appear informally on the station; however, it was on November 25, 1925, when he invited seventy-eight-year-old Laguardo fiddler Uncle Jimmy Thompson to appear, that he really caught the fancy of his new listening public. Responding to a flood of letters and telegrams, Hay announced on December 26 that WSM would present a regular Saturday night "barn dance" of old-time tunes. In May 1927 the "barn dance" was renamed the "Grand Old Opry."<br><br>During the first decade of the show, many of the regulars were local string bands and singers, who worked at "day jobs" in and around Nashville. Determined to bolster the "down to earth" image of the show, Hay gave the groups colorful names, like the Fruit Jar Drinkers and the Possum Hunters. The first star of the show--the first artist who had recorded and played professionally in vaudeville--was banjoist and singer Uncle Dave Macon. He was soon joined by another professional group, a singing trio called the Vagabonds, in 1933, and by the mid-1930s singers like the Delmore Brothers were building national reputations.
+In order to support a cast of professionals, WSM started the Artists Service Bureau in 1934 to help get the show's acts paying jobs doing tours and concerts. This "professionalization" was accomplished through the efforts of Harry Stone, a practical, hardheaded business manager. <br><br>Hired in 1930 as the station's general manager, Stone took Hay's romantic ideas and commercialized them. His efforts resulted in the Grand Ole Opry's gaining a slot on the nationwide NBC network in 1939 and becoming the subject of a Hollywood film in 1940.<br><br>During the 1930s and 1940s Opry management continued to develop a live audience for their radio show; early venues included the original WSM studio at the downtown National Life building, the Hillsboro Theater, the Dixie Tabernacle on Fatherland Street, the War Memorial Auditorium downtown, and starting in 1943, the venerable Ryman Auditorium. It was this latter structure, originally designed as a "gospel tabernacle," that became the "mother church of country music" and home of the Opry until 1974. The World War II years saw the show gain even more national attention through its popularity on the Armed Forces Radio Network and a series of military base tours called the Camel Caravan. With a string of hit records and a series of Hollywood musicals, Roy Acuff, who joined the show in 1938, had by now become a national star of the rank of Bing Crosby and Benny Goodman.<br><br><div class="more">Important changes in music occurred on the Opry during the 1950s. Modern instruments such as the steel guitar and electric guitar became common, and the older sentimental songs and banjo tunes were replaced with modern honky-tonk songs and musical styles of the West and Southwest represented by artists like Ernest Tubb and Hank Williams. During the late 1950s, the Opry, like most country music, was seriously shaken by the challenge of the new rock-n-roll, and the show suffered from controversy and rancor. Though it continued to attract major stars like Marty Robbins, Grandpa Jones, Hank Snow, Jim Reeves, and others, for a time it seemed to be marking time. <br><br>Younger artists felt confined by the Opry's demands that they appear on a required number of shows per year, which meant giving up lucrative touring dates.
+			This began to change in 1974, when National Life built a new five-thousand-seat Opry House in a rural area north of town. The dedication show, held on March 16, 1974, attracted President Richard Nixon as a guest and garnered a wealth of national media attention to the show and its history. Opryland, a nearby theme park created by designers from Disneyland, opened, and in 1987 the park added a large convention center, the Opryland Hotel. <br><br>The new state-of-the-art Opry House, with its television capacity and advanced technology, helped attract new audiences and new performers to the show; the roster of Opry acts grew to sixty, then to seventy-five, and then in the 1990s to one hundred. Though the National Life company was acquired by the Oklahoma-based Gaylord Broadcasting Company in 1983, the Opry was able to maintain its autonomy and soon developed close ties with another key Gaylord enterprise, the cable television channel called The Nashville Network (TNN), which closed in late 2000, replaced by the National Network. This channel telecasts a thirty-minute segment of the Opry every Saturday night. By the mid-1990s the Opry could once again claim in its membership most of the major performers in country and bluegrass music.<br><br><big>Suggested Reading:</big><br><br>Charles K. Wolfe, A Good-Natured Riot: The Birth of the Grand Ole Opry (1999).<br><br><i id="first">Copyrighted material from the</i><i id="copyright"> Tennessee Encyclopedia of History and Culture</i><i id="last">,courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid text-left">
+  <p>Copyright &copy; 2017 THOF</p>
+</footer>
+
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>
+</html>

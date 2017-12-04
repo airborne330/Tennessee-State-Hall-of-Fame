@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GRACELAND</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,Graceland, graceland, memphis,elvis presley's home">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+#information{
+	margin: 0 10%;
+}
+	html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+	  #navbar{
+		  float:left;
+	  }
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.navbar.navbar-inverse {
+		background-color:#ffffff;
+}
+	  .navbar.navbar-inverse ul{
+		  margin-left:2.5%;
+	  }
+	  .navbar.navbar-inverse li a:hover{
+		  color:#ffffff;
+		  background-color:#8b0000;
+	  }
+	  #active{
+		  background-color:#8b0000;
+		  color:#ffffff;
+	  }
+	  .container-fluid.text-center footer{
+		  background-color:#8b0000;
+	  }
+.row.content .col-md-12.text-left h1 {
+	color:#ffffff;
+	text-align: center;
+}
+  .row.content .col-md-12.text-left p{
+	background:#dacba2;
+	color: #000000;
+    border:3px solid #ffffff;
+	text-align: justify;
+    text-justify: inter-word;
+	 font-size: 20px;
+	  }
+.row.content #info .read-more-wrap {
+	border: 3px solid #ffffff;
+	height:auto;
+}
+.navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+#info .read-more-wrap big {
+	font-size: 25px;
+}
+#info .read-more-wrap #liz {
+	color:#2871C8;
+	text-decoration: underline;
+}
+.read-more-wrap .read-more-target big {
+	color:#2871C8;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#information .row.content #info {
+padding: 2%;
+background: #dacba2;
+color: #000000;
+border-radius: .25em;
+border:3px solid #ffffff;
+text-align: justify;
+text-justify: inter-word;
+font-size: 20px;
+}
+.row.content #info #grave {
+	border: 5px solid #7A6A32;
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-md-12.text-left p #copyright {
+	color:#44A2C9;	
+}
+.row.content .col-md-12.text-left #elviscar {
+	border: 5px solid #ffffff;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+	a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}	
+  </style>
+</head>
+	<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+ 	 <li><a href="religion.html">RELIGION</a></li>
+      <li><a href="cotton.html">COTTON</a></li>
+      <li><a href="tobacco.html">TOBACCO</a></li>
+      <li><a href="mules.html">MULES</a></li>
+      <li><a href="tva.html">TVA</a></li>
+      <li><a href="grandoleopry.html">GRAND OLE OPRY</a></li>
+      <li><a href="graceland.html" id="active">GRACELAND</a></li>
+      <li><a href="stjudes.html">ST.JUDE'S</a></li>
+ 	  <li><a href="whiskey.html">WHISKEY</a></li>      
+      <li><a href="southern.html">THE SOUTHERN RENASCENCE</a></li>      
+      <li><a href="dollywood.html">DOLLYWOOD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+          <a href="grandoleopry.html" class="previous">&laquo; Previous</a>
+		  <a href="stjudes.html" class="next">Next &raquo;</a>
+<div class="container-fluid text-center" id="information">    
+  <div class="row content">
+    <div class="col-md-12 text-left"> 
+      <h1>Graceland</h1>
+  <br>
+		<img id="elviscar" src="images/elviscar.jpg" style="max-width: 100%"><br><br>
+			<p>“Graceland,” Elvis Presley’s Memphis home, “ranks with Mount Vernon and Monticello as the most popular of American house museums.”  The house was built in 1939, as an exquisite residence on a 14-acre estate .  Elvis Presley purchased it in 1957, as a home to be shared with his parents.  He also made room for his “Memphis Mafia.”  Priscilla, his young wife, naturally moved in as well, and Graceland became the center of his life.  In time, his adoring public turned it into a virtual shrine, which continued to expand even after his death in August 1977.</p>
+	
+    </div>
+    	<div class="col-md-12" id="info">
+
+				<img id="grave" src="images/elvisgravesite.jpg" alt="mules" style="max-width: 100%"><br><br>By Carroll Van West , Middle Tennessee State University<br><br>Elvis Presley's Graceland ranks with Mount Vernon and Monticello as the most popular of American house museums. Though this may startle many and outrage some, the heavy visitation these three sites annually receive is the result of a similar confluence of factors. Since each is a place where its hero not only lived but also died and was interred, to each is imparted the aura of a shrine. While all three sites function as diversions for the curious and attractions for the historically dutiful, they also beckon pilgrims who come to honor the era-shaping magnitude of one man's achievements. Two centuries ago, George Washington and Thomas Jefferson founded an American republic on new and important ideals about human equality and rights of self-determination.<br><br> Four decades ago, Elvis Presley demonstrated how unimpeded this American opportunity for self-determination might be. His life and music also cast into sharp public relief the deep and persistent fissures between social and economic classes which challenge the myth that equality of voice and dignity--if not of fortune--is an American birthright.
+Graceland was built south of Memphis in 1939 according to the design of local architects Max H. Furbringer and Merrill Ehrman. Sited on a hill facing U.S. Highway 51, the house dominates the fourteen-acre remnant of a substantial farm which belonged to the prominent Toof family for several generations. Ruth Moore, a Toof on her mother's side, built the house with her well-to-do husband and gave it her family's name for the old farm: Graceland. Constructed with a facing of pale Mississippi limestone, the house has the two-story height, two-room depth, classical details, and domineering white portico which evoke sustained gentility in an unmistakably southern architectural drawl.<br><br>
+When Graceland was new, the Memphis Commercial Appeal wrote approvingly of its aloofness amidst a "grove of towering oaks" from the road it overlooked, but a suburban neighborhood was already replacing Graceland's rural setting, and Highway 51 itself was starting to attract commercial development. In 1945 the Moores divorced and offered their expensive house for sale to whoever would tolerate the incrementally widening highway and its multiplying roadside offenses.
+Such surroundings did not faze the young man who at last purchased Graceland in 1957. Elvis Presley was born dirt-poor and raised hungry in Tupelo, Mississippi, but his capacity for original vocal fusions of country, blues, and southern gospel singing traditions made him rich and famous. His singing, combined with a knee-weakening erotic style of performance and velvety, haunting beauty, permanently upset the course of popular music and entirely transformed what it means to be young in America. Though only twenty-two when he gained title to Graceland, he already had received the homage he retains to this day: Elvis was the King of Rock and Roll.<br><br>
+Of course Elvis did not intend Graceland to be his alone. Like the plain, deferential southern boy he was, Elvis moved his parents to Graceland and treated them, in many respects, as heads of the household. Ensuing years saw the arrival at Graceland of an array of kin and friends, not to mention the sixteen-year-old "ward" whom Elvis eventually married. When Pricilla Beaulieu Presley left him in 1972, other live-in girlfriends arrived to fill the void. There also was room at Graceland for the famous "Memphis Mafia," a gang of good old boys who stayed round-the-clock available to Elvis for assistance or play.
+Elvis initiated his twenty-year involvement with Graceland by securing its perimeter in a way that both distanced fans and attracted their attention. The protective pink limestone wall practically invited admirers to scrawl their adulation, while the central iron gates, distinguished with guitar-strumming figures and wafting musical notes, held their own alongside other signs on the burgeoning commercial strip. At night brilliant multicolored floodlights bathed Graceland's facade. In these ways, Elvis's house contended for attention--it was just one more visual attraction on Highway 51.<br><br>
+This exuberance for dramatically enhancing Graceland's form extended indoors as well. The look of the interior at any one time is difficult to grasp--changes occurred often--but generalizations are possible. For each component of the house, Elvis retained conventional room designations with their customary formal or casual qualities. Furthermore, every phase of interior treatment shares richly colored assemblages of thick carpet, costly fabrics, large-scale furniture, complicated lamps, and novelty accents. To override any suggestion of layaway purchases, installment plans, or results gradually accrued, redecorations always reflected rigorous continuities of design. From the start and even today, visitors to Graceland often miss the point of all this glisten and gush. Elvis's rise to fame and fortune was dizzyingly swift, at times overwhelming. Along the way, he snatched what he could learn about wealthy living from lavishly appointed theaters and auditoriums, luxury car and tour-bus interiors, Hollywood sets, and Las Vegas suites. Then he brought it all back to the house he proudly owned. As one analyst put it, Graceland is how a poor boy lives rich.<div class="more">
+Although Elvis discovered soon and under piteous circumstances that chilly-eyed observers thought his house was in staggeringly bad taste, he continued to decorate Graceland as he pleased--adding a new defiant edge and a willingness to embrace the outrageous. His choices also manifest an evolving sense of Graceland as a haven--even a fortress--rather than a showplace. Heavy drapes perpetually drawn, walls covered in pleated fabric or tufted gold upholstery, ceilings lowered and softened with green shag carpet: all are manifestations of Elvis's intensifying need for enclosure and containment. Of course this muffling of Graceland is only the most obvious expression of the isolation and embattlement that accompanied his unparalleled stardom and threatened at last to engulf him.<br><br> To deal with his turbulent feelings, Elvis escalated his drug abuse and wanton overeating, habits he had indulged for years. Both exacerbated the disorienting effects of his long-standing nocturnal existence amidst a closed circle of accommodating friends and pliant relatives. To all of this his heavy body and aching heart at last succumbed on August 16, 1977.
+Because they shared the sensibilities of those who dismissed Graceland as worthlessly gaudy, most journalists initially ignored the death of an overfed has-been, but fans of every background and description turned the death of Elvis Presley into a populist event of unique scale and significance. Motivated by the countless ways in which Elvis touched his audiences, they converged on Memphis by the tens of thousands, virtually paralyzing the city until his funeral and burial were over. Afterward their tributes and vigils made Elvis's resting conventionally in Forest Hills Cemetery an impossibility; within weeks of his death the Presleys moved his remains to the Meditation Garden behind Graceland's gates. Thus the site became the vital abode of Elvis's spirit, just as it had been the emotional locus of his life.<br><br>
+Since Graceland opened to the public in 1982, Elvis's grave has figured as the destination for organized tours through the house itself and past the displays of costumes, memorabilia, and awards sheltered in auxiliary buildings. The grave also has become central to Tribute Week, the annual observation of Elvis's death. The event's climactic candlelight vigil begins in Meditation Garden at twilight on August 15 and lasts until sunrise on the fateful morning, when all participants extinguish their flames. Old-family Memphians flinch or sneer at this most intensely worshipful of all "Dead Elvis" adulations. Even Elvis Presley Enterprises keeps its distance, although permission to stay at Graceland overnight is the corporation's to grant or withhold. It hardly matters; the faithful would crowd against Graceland's embellished gates if that were as close as they could get. They sense that Elvis Presley and Graceland are inextricably bound, and that both belong, beyond all contest, to the American everybodies and nobodies who love them.<br><br>
+			<big>Suggested Reading:</big><br><br>
+Elvis Presley's Graceland: The Official Guidebook (1996);<br><br> Greil Marcus, Dead Elvis (1991);<br><br> Karal Ann Marling, Graceland (1996);<br><br> Gilbert B. Rodman, Elvis After Elvis (1996).
+
+Copyrighted material from The Tennessee Encyclopedia of History and Culture, courtesy of the Tennessee Historical Society
+
+			<br><br> <i id="first">Copyrighted material from</i> <i id="copyright">The Tennessee Encyclopedia</i><i id="last">, courtesy of the Tennessee Historical Society.</i></div>
+	</div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-left">
+  <p>Copyright &copy; 2017 THOF</p>
+</footer>
+
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dollywood</title>
+  <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,dollywood,dolly parton's amusement park,amusement park">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+
+.row.content #info .display {
+	font-size: 12px;
+}
+.display figcaption a {
+	padding:0;
+	margin:0;
+}
+#info .display {
+border: 5px solid #BDBDBD;
+background: #E0E0E0;
+padding: 5px;
+margin:0px;
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+	  .center-block{
+		    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	  }
+#two.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.display figcaption p {
+	text-align: center;
+}
+#info .display figcaption {
+	text-align: center;
+}
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	 #two .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+#information{
+	margin:0 10%;
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+	  #navbar{
+		  float:left;
+	  }
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.navbar.navbar-inverse {
+		background-color:#ffffff;
+}
+	  .navbar.navbar-inverse ul{
+		  margin-left:2.5%;
+	  }
+	  .navbar.navbar-inverse li a:hover{
+		  color:#ffffff;
+		  background-color:#8b0000;
+	  }
+	  #active{
+		  background-color:#8b0000;
+		  color:#ffffff;
+	  }
+	  .container-fluid.text-center footer{
+		  background-color:#8b0000;
+	  }
+
+.row.content #info .read-more-wrap {
+	border: 3px solid #ffffff;
+	height:auto;
+}
+.navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#information .row.content #info {
+  padding: 2%;
+  border:3px solid #ffffff;
+  background: #dacba2;
+  color: black;
+  border-radius: .25em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+}
+#information .row.content .col-md-12.text-left {
+	color:black;
+}
+
+.row.content #firstsection {
+	color:#000000;
+	background: #dacba2;
+	border: 3px solid #ffffff;
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 20px;
+}
+.row.content .col-md-12 #title {
+	color:#ffffff;
+	text-align: center;
+}
+.col-md-12 #firstsection #copyright {
+	color:#44A2C9;	
+}
+.col-md-12 #firstsection #copy {
+	color:#44A2C9;
+	  }
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+/*.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}*/
+
+.round {
+    border-radius: 50%;
+}		 
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+ 	  <li><a href="religion.html">RELIGION</a></li>
+      <li><a href="cotton.html">COTTON</a></li>
+      <li><a href="tobacco.html">TOBACCO</a></li>
+      <li><a href="mules.html">MULES</a></li>
+      <li><a href="tva.html">TVA</a></li>
+      <li><a href="grandoleopry.html">GRAND OLE OPRY</a></li>
+      <li><a href="graceland.html">GRACELAND</a></li>
+      <li><a href="stjudes.html">ST.JUDE'S</a></li>
+ 	  <li><a href="whiskey.html">WHISKEY</a></li>      
+      <li><a href="southern.html">THE SOUTHERN RENASCENCE</a></li>      
+      <li><a href="dollywood.html" id="active">DOLLYWOOD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   		  <a href="southern.html" class="previous">&laquo; Previous</a>
+		  <!--<a href="graceland.html" class="next">Next &raquo;</a>-->
+<div class="container-fluid text-center" id="information">    
+  <div class="row content">
+    <div class="col-md-12"> 
+      <h1 id="title">Dollywood</h1>
+  <br><br><br><br>
+		<p id="firstsection">Dollywood is Dolly Parton’s contribution to stylized Appalachian memories.  It is among the most visited parks in America.  Dollywood, built on the foundation of an earlier park, mixes fanciful train rides and adventure scenes with fast foods and musical themes.  It incorporates safe excitement with the idea of a rustic, homey past.  Parton’s rags-to-riches biography is depicted in a family-oriented, cleaned up hillbilly culture.</p>
+    </div>
+<div class="col-md-12" id="info">
+		<figure class="display" style="max-width: 100%"><img class="center-block" src="images/Timbertower.jpg" alt="Timber Tower at Dollywood" style="max-width: 100%"><br>
+			<figcaption style="font-style:italic"><p>Timber Tower at Dollywood</p><br><a href="https://commons.wikimedia.org/wiki/File:Timbertower.jpg" target="_blank">"Timbertower.jpg"</a> by <a href="https://en.wikipedia.org/wiki/User:WillMcC" target="_blank">WillMcC </a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a> / A derivative from the <a href="https://commons.wikimedia.org/wiki/File:Timbertower.jpg" target="_blank">original work</a></figcaption></figure>
+		
+			<br><br>By Camille Wells , Raleigh <br><br>Dollywood is a theme park founded in Pigeon Forge by Tennessee singer-songwriter Dolly Parton to enhance the economy of her native Sevier County. As the jaunty pun of the name implies, Dollywood involves the endless layerings and juxtapositions of traditional mountain culture and glitzy commercial appeal which are the twin hearts of Parton's own public persona. Dollywood is as purringly profit-oriented as any successful American theme park, the business of which is to conflate having fun with spending money, but it has an emotional core like no other. All involved in the enterprise understand what Dollywood has done for local prosperity, and even the most urbane of the park's components are suffused with the Tennessee hillbilly's point of view. Glittering Dollywood Boulevard, touted as a tribute to classic movies and film stars, also touchingly expresses what movies meant to people living in isolated Appalachia. While the hillbilly mystique is present and even celebrated in attractions as diverse as old-time soap-making and high-tech simulations of the white lightening chase in Thunder Road, depictions of the gullible hillbilly and his suspicious gun-toting cousin are emphatically excluded.<br><br>
+	Theme parks in general owe their success to the desire of a vacationing public to travel to a new place and encounter something of its distinctive character without fear that geographic and cultural dislocation will force them into threatening or disorienting situations. That is the role of the themes--promotions of a place, a past, a commodity, or a fantasy that make even the most dense and colorful profusion of attractions seem cohesive and accessible. One reason Dollywood is now among the twenty-five most visited parks in America is because it offers safe, controlled proximity to a southern hillbilly culture which has simultaneously intrigued and alienated Americans for over a century.
+Dollywood's origins devolve from late nineteenth- and early twentieth-century industrial exploitation of the mountain South. In 1961 the Robbins family rebuilt a narrow-gauge railway and locomotive which a logging company had abandoned after the federal government established the Great Smoky Mountains National Park.<br><br> Adding passenger cars to the train and a general store, saloon, and blacksmith shop to its point of departure and arrival, the Robbinses established Rebel Railroad. The special appeal of each train ride was the "possibility" that Federal troops might spring from the underbrush, board the train, and steal a strongbox full of Confederate money. Promotions encouraged children to bring weapons and help fight off marauding Yankees.<div class="more">
+	Investment-minded managers of the Cleveland Browns bought this languishing business in 1970 and refashioned it into Goldrush Junction, an amusement park with an Old West theme, which featured, in addition to the train and its existing accouterments, a woodworking shop, sawmill, outdoor theater, and log cabins. Seven years later Herschend Enterprises bought the facility and renamed it Silver Dollar City. The park now emphasized old-time southern means of production, in support of which the new owners built and staffed a water-driven gristmill and a carriage-making shop. Other craft workshops followed. By 1980 the popularity of this handicraft theme was faltering, so the owners added amusement rides with dangerous-sounding names like Tennessee Twister, Blazing Fury, and Flooded Mine.<br><br>
+	In the early 1980s Dolly Parton began to consider establishing her own theme park in Pigeon Forge. By 1985 she had arranged a partnership with the Herschends and reached an agreement that she would invest several million dollars to enlarge, elaborate, and rename Silver Dollar City. Parton maintained the facility's decades-long strategy of accretion as well as reinvention; all existing operations remained in place, although most were refurbished and received new names--the old Rebel Railroad, for example, became the Dollywood Express. Nevertheless, park planners reorganized the site into zones with contrasting designations and themes. They also added an entirely new complex of shops and amusements focused around a whitewater ride called Smoky Mountain Rampage and the Back Porch Theater, where Parton's relatives performed in regular musical shows. These improvements, in addition to a more scrubbed-up, service-oriented style of visitor reception, required Silver Dollar City's three hundred employees to make room for five hundred more by the date of 	Dollywood's 1986 grand opening.<br><br>
+Almost every year since, Dollywood has expanded to encompass a new zone of amusement with a distinctive name and theme shared in some way by its entire constellation of novel attractions. The park now encompasses 125 acres and welcomes well over two million visitors each year. In combination with the tourist attractions, restaurants, and motels which have sprouted beyond its gates, Dollywood also makes Pigeon Forge the most formidable source of revenue in Sevier County.
+	Parton's music and her spirit pervade Dollywood, but she is explicitly present in three locations: the Rags to Riches Museum contains chronologically arranged memorabilia from different phases of her life; the replica of her two-room childhood home offers visitors an impossibly tidy and charming depiction of the Partons' life on Locust Ridge; and the Heartsongs multimedia show romantically evokes the origins of her music in the natural beauty of the mountains.<br><br> Parton has cheerfully acknowledged the artifice in these and many other park presentations, but her particular conviction about memory--that good ones should be treasured and bad ones forgotten--subtly justifies the relentlessly positive tone and commercial polish of a park where so many of the diversions play off the traditional lifeways of a people whose lot involved exhausting work and few material rewards. A similar resolution is implicit in the park's mission statement: "Create Memories Worth Repeating." The implication is that an energetic and consumption-oriented experience shared with family or friends can instantly generate joyous and relivable memories minus the monotony, adversity, and loss which are their inevitable context. If such a thing were indeed possible, it would happen at Dollywood.<br><br>
+	<i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of the Tennessee Historical Society.</i></div>
+	  </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-left">
+  <p>Copyright &copy; 2017 THOF</p>
+</footer>
+
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+</html>

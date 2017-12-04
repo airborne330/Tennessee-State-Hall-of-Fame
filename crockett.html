@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>David "Davy" Crockett</title>
+    <meta name="description" content="The Tennessee State Hall of Fame recognizes the unique people,places and entities that have brought fame and fortune to the state">
+<meta name="keywords" content="The Tennessee State Hall of Fame,fame,fortune,david crockett,davy crockett,alamo">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.wrapper {  
+  overflow:hidden;
+background-color: #8b0000;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  background-color: #8B0000;
+  float:left; 
+  width:65%;
+  /*border-right:2px solid #000;*/
+color:#ffffff;
+}
+	  #one h1{
+		  margin-top:75px;
+		  float:right;
+	  }
+#two { 
+  background-color: #8b0000;
+  overflow:hidden;
+ /* border:2px dashed #ccc;*/
+  min-height:170px;
+}
+	  .center-block{
+		  margin-left: 0px;
+	  }
+@media screen and (max-width: 400px) {
+   #one { 
+    text-align: center;
+    margin-right:0;
+    width:auto;
+    border:0;   
+  }
+}
+@media screen and (max-width: 400px) {
+	  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+}
+	  html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+	background-color:#1b1464;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+	background-color:#8b0000;
+}
+	  footer p{
+		  color:#ffffff;
+	  }
+.navbar.navbar-fixed-top.navbar-inverse {
+	background-color:#1b1464;
+}
+.navbar.navbar-fixed-top.navbar-inverse li a{
+		  color:#ffffff;
+	  }
+#sidebar .list-group .list-group-item.active {
+	background-color: #1b1464;
+	border:2px solid #ffffff;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 {
+	background-color:#1b1464;
+	height:100%;
+}
+.container-fluid .row.row-offcanvas.row-offcanvas-right #sidebar {
+	background-color:#dacba2;
+}
+
+.read-more-wrap .read-more-target big {
+	font-size: 35px;
+}
+	  .navbar.navbar-inverse .container-fluid .navbar-header {
+	background-color:#8b0000;
+}
+.container-fluid .navbar-header .navbar-toggle.collapsed:hover {
+	background-color:#1b1464;
+}
+.container-fluid .navbar-header .navbar-toggle:hover {
+	background-color:#1b1464;
+}
+	  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+.col-xs-12.col-sm-9.col-sm-push-3 .row #williamblount{
+		margin-left: 12%;
+		display: block;
+	}
+#info .more #copyright {
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #first {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+#info .more #last {
+	font-style: normal;
+	color:#44A2C9;
+	font-size: 15px;
+}
+.list-group li {
+	list-style-type: none;
+	text-decoration: underline;
+}
+.row.row-offcanvas.row-offcanvas-right .col-xs-12.col-sm-9.col-sm-push-3 #info {
+	  padding: 2%;
+	  background: #dacba2;
+	  color: black;
+	  border-radius: .25em;
+	  border:3px solid #ffffff;
+	  font-size: 20px;
+	  text-align: justify;
+      text-justify: inter-word;
+}
+.row.row-offcanvas.row-offcanvas-right #sidebar .list-group {
+	margin-top:15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #8b0000;
+    color: white;
+	margin-top: 10px;
+	margin-left:10px;
+	border-radius: 15px;
+	
+}
+
+.next {
+    background-color: #8b0000;
+    color: white;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	border-radius: 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+#williamblount {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#williamblount:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  /*  z-index: 1; *//* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}	 		
+  </style>
+	</head>
+	<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<div class="wrapper">
+    <div id="one"><h1>THE TENNESSEE STATE HALL OF FAME</h1></div>
+    <div id="two"><img class="center-block" src="images/THOF_Logo.jpg" alt="Hall of Fame Logo" width="200px"></div>
+  </div>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon">Honored People</i>
+          </button>
+          <div class="row">
+            <a href="johnsevier.html" class="previous">&laquo; Previous</a>
+		  <a href="samhouston.html" class="next">Next &raquo;</a>
+      		<img src="images/DavyCrokett.jpg" id="williamblount" class="img-responsive" width="75%">
+         </div><!--/row-->
+         				<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <!--<div id="caption"></div>-->
+					</div>
+          			<div class="col-md-12" id="info">
+          								By Michael A. Lofaro , University of Tennessee<br><br>David Crockett, frontiersman, Tennessee legislator and U.S. congressman, folk hero, and icon of popular culture, was an intriguing composite of history and myth. Both the historical figure who died at the Alamo and the legendary hero kept alive in the media of his day and ours, Crockett partly invented his own myth. History melted even more easily into legend as eager writers, editors, and producers provided an omnivorous public with an increasing number of remarkable tales about the heroic frontiersman and turned the flesh-and-blood David into the legendary Davy.<br><br>Born on August 17, 1786, in Greene County in East Tennessee, Crockett grew up with the new nation and helped it grow. He lived in Tennessee for all but the last few months of his life and promoted the gradual westward expansion of the frontier through Tennessee toward Texas. In his search for a better life for himself and his family, he participated in a process that we now call the American dream.<br><br>David was the son of John Crockett, magistrate, unsuccessful land speculator, and tavern owner, and Rebecca Hawkins Crockett. Preferring to play hooky rather than attend school, he ran away from home to escape his father's wrath. His "strategic withdrawal," as he called it, lasted about thirty months. When he returned home in 1802, he had grown so much that initially his family did not recognize him. He soon found all forgiven and reciprocated their generosity by working for a year to settle his father's debts.<br><br>David married Mary "Polly" Finley on August 14, 1806, in Jefferson County. They remained in East Tennessee until 1811, when the Crocketts and their two sons, John Wesley and William, settled in Lincoln County. In 1813 they moved again, this time to Franklin County, where Crockett twice enlisted as a volunteer in the Indian wars from 1813 to 1815; following the wars, he was elected a lieutenant in the Thirty-second Militia Regiment of Franklin County. Soon after his discharge, Polly gave birth to Margaret, their third child; Polly died that summer. A year later, he married Elizabeth Patton, a widow with two children. The family moved to Lawrence County in the fall of 1817.<br><br>Although he served as a justice of the peace, Lawrenceburg town commissioner, and colonel of the Fifty-seventh Militia Regiment of Lawrence County, Crockett was relatively unknown before his 1821 election to the Tennessee legislature, representing Lawrence and Hickman Counties. Reelected in 1823, but defeated in 1825, he won election to the U.S. House of Representatives from his new West Tennessee residence in 1827. He campaigned as an honest country boy and an extraordinary hunter and marksman--someone who was in every sense a "straight shooter." Reelected to a second term in 1829, he split with President Andrew Jackson and the Tennessee delegation headed by James K. Polk on several important issues including land reform and the Indian removal bill. Crockett was defeated in 1831, when he openly and vehemently opposed Jackson's policies, but was reelected in 1833.<br><br>Notoriety gave Crockett's image a life of its own. By 1831 Crockett had become the model for Nimrod Wildfire, the hero of James Kirke Paulding's play, The Lion of the West, as well as the subject of numerous books and articles. In fact, Crockett claimed he was compelled to publish his 1834 autobiography A Narrative of the Life of David Crockett of the State of Tennessee, which he wrote with the help of Thomas Chilton, to counteract the outlandish stories printed in Sketches and Eccentricities of Col. Crockett, of West Tennessee a year earlier. He clearly recognized the power of his popular image and sought to manipulate it for political gain. Anonymous eastern hack writers took up the more outrageous stories and spun out tall tale yarns for the Crockett Almanacs (1835-56). In their hands, the fictional Davy became a backwoods screamer. With the death of the historical Crockett at the Alamo in 1836, the floodgates opened for the full-blown expansion of the legend. Crockett could not only "run faster, -jump higher, -squat lower, -dive deeper, -stay under longer, -and come out drier, than any man in the whole country," but he could save the world by unfreezing the sun and the earth from their axes and ride his pet alligator up Niagara Falls.<br><br><div class="more">Touted by the Whigs as the candidate to oppose Jackson's hand-picked successor Martin Van Buren in the 1836 election, Crockett was defeated in his 1835 congressional bid with the help of Jackson and Governor William Carroll. The election of Adam Huntsman, a peg-legged lawyer, temporarily disenchanted Crockett with politics and his constituents, prompting him to make the now-famous remark: "Since you have chosen to elect a man with a timber toe to succeed me, you may all go to hell and I will go to Texas." His last letters spoke of his confidence that Texas would allow him to rejuvenate his political career and finally make his fortune. He intended to become land agent for the territory and saw the future of an independent Texas as intertwined with his own.<br><br>He and his men joined Colonel William B. Travis at San Antonio De Bexar in early February 1836. Mexican General Antonio Lopez de Santa Anna arrived on February 20 and laid siege to the Alamo. Travis wrote that during the first bombardment, Crockett was everywhere in the Alamo, encouraging the men to fight and fulfill their duties. The siege of thirteen days ended on March 6, 1836, when Mexican troops overran the Alamo at about six o'clock in the morning.  According to the eyewitness account in the diary of Lieutenant Jose Enrique de la Pena, Crockett and five or six other survivors were captured. Several Mexican officers asked that the prisoners be spared, but Santa Anna ordered them bayoneted and shot. <br><br>Many thought Crockett deserved a better fate, and they provided it, creating thrilling fictions from his clubbing Mexicans with his empty rifle until cut down by a flurry of bullets, bayonets, or both, to his survival as a slave in a Mexican salt mine. Clearly the present image of Crockett in American popular culture is the descendant of this tradition of Davy as the hero of romantic melodrama. From his characterization by Paulding as Nimrod Wildfire to that of Frank Mayo as author and star of the long-running play Davy Crockett: Or, Be Sure You're Right Then Go Ahead, the legend was passed on through a series of silent and modern films that culminated in the portrayals of Crockett by Fess Parker in the well-known Walt Disney productions and John Wayne, who produced, directed, and starred as Davy in The Alamo. Nineteenth-century drama and twentieth-century film always presented a heroic, kind Crockett. Courageous, dashing, and true blue, this nobleman of nature protected his country and all who were helpless with equal fervor.<br><br>The Walt Disney-Fess Parker-inspired Crockett craze of the mid-1950s was without question the high water mark of the impact of the legendary Crockett. A media-generated event, it occurred at the moment when television first began to reach a mass market, and Disney launched his enterprise with the innovative premise that children represented a renewable audience. At the height of the craze, American youth drove their parents crazy with countless renditions of "The Ballad of Davy Crockett" and demands for coonskin caps and fringed deerskin jackets and pants. Department stores set up special Crockett sections to sell clothes and Crockett paraphernalia such as records, lunch boxes, towels, wallets, athletic equipment, baby shoes, and even women's panties. Grosset and Dunlap's sales for the book The Story of Davy Crockett increased to thirty times the ten thousand copies per year that had constituted normal sales before 1955. The total Crockett industry realized sales of approximately $300 million. And Disney was right about the recyclable nature of his market; today children meet Crockett on the Disney Channel on cable television.<br><br>Although Davy's perennial best-seller status means that economic motives support the creation of different Crocketts, that fact need not tarnish our enjoyment of them. Neither should the Gordian tangle of man and myth obscure the essential unity of Crockett. Crockett, David and Davy, was frontiersman, congressman, blazing patriot, boisterous braggart, and backwoods trickster, with all the roles dissolved by a puckish good humor and recast into a single, fun-loving presence. The Crockett of history and culture is large and mirrors the ever-changing self-image of the United States. Invested in him--both as man and myth--are the hopes and beliefs, the virtues and values, and the shortcomings and triumphs of each generation of Americans who take him up as one of their heroes.<br><br><big>Suggested Reading:</big><br><br>David Crockett, A Narrative of the Life of David Crockett (1834);<br><br> Michael A. Lofaro, ed., Davy Crockett: The Man, the Legend, the Legacy, 1786-1986 (1985); James A. Shackford, David Crockett: The Man and the Legend (1956).<br><br><i id="first">Copyrighted material from</i><i id="copyright"> The Tennessee Encyclopedia of History and Culture</i><i id="last">, courtesy of The Tennessee Historical Society.</i> </div>
+
+	</div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">  
+   <li><h3>Frontier and Early Statehood</h3></li>
+            <a href="williamblount.html" class="list-group-item">William Blount</a>
+			<a href="sequoyah.html" class="list-group-item">Sequoyah</a>
+			<a href="johnsevier.html" class="list-group-item">John Sevier</a>
+			<a href="crockett.html" class="list-group-item active">David "Davy" Crockett</a>
+			<a href="samhouston.html" class="list-group-item">Sam Houston</a>
+			<li><h3>The Old South and The Transportation Revolution</h3></li>
+			<a href="andrewjackson.html" class="list-group-item">Andrew Jackson</a>
+			<a href="jamespolk.html" class="list-group-item">James K. Polk</a>
+			<li><h3>Civil War and Reconstruction</h3></li>
+			<a href="andrewjohnson.html" class="list-group-item">Andrew Johnson</a>
+			  <li><h3>Jim Crow and The Progressive Era</h3></li>
+			<a href="asahelpatch.html" class="list-group-item">Asahel Huntington Patch</a>
+			<a href="horaceharmon.html" class="list-group-item">Horace Harmon Lurton</a>
+			  <li><h3>World War I and Social Change</h3></li>
+			<a href="alvinyork.html" class="list-group-item">Alvin C. York</a>
+			<a href="austinpeay.html" class="list-group-item">Austin Peay</a>
+			<a href="willhandy.html" class="list-group-item">William Christopher, "W.C." Handy</a>
+			  <li><h3>World War II Era</h3></li>
+			<a href="cordellhull.html" class="list-group-item">Cordell Hull</a>
+			<a href="jamesagee.html" class="list-group-item">James Agee</a>
+			<a href="royacuff.html" class="list-group-item">Roy Claxton Acuff</a>
+			<a href="chetatkins.html" class="list-group-item">Chester Burton "Chet" Atkins</a>
+			<a href="ernieford.html" class="list-group-item">Tennessee Ernie Ford</a>
+			  <li><h3>Cold War and Contested Segregation</h3></li>
+			<a href="minniepearl.html" class="list-group-item">Minnie Pearl</a>
+			<a href="careykefauver.html" class="list-group-item">Carey Estes Kefauver</a>
+			<a href="lorettalynn.html" class="list-group-item">Loretta Lynn</a>
+			  <li><h3>Tense Times and Cultural Developments</h3></li>
+			<a href="albertgoresr.html" class="list-group-item">Albert Arnold Gore, Sr.</a>
+			<a href="willanderson.html" class="list-group-item">William Robert Anderson</a>
+			<a href="elvispresley.html" class="list-group-item">Elvis Presley</a>
+			<a href="johnnycash.html" class="list-group-item">Johnny Cash</a>
+			<a href="howardbaker.html" class="list-group-item">Howard H. Baker, Jr.</a>
+			<a href="wilmarudolph.html" class="list-group-item">Wilma G. Rudolph</a>
+			  <li><h3>The World Disrupted Again</h3></li>
+			<a href="dorothydix.html" class="list-group-item">Dorothy Dix (Elizabeth Meriwether Gilmer)</a>
+			<a href="robertpenn.html" class="list-group-item">Robert Penn Warren</a>
+			<a href="dinahshore.html" class="list-group-item">Dinah Shore</a>
+			<a href="alexhaley.html" class="list-group-item">Alex Murray Palmer Haley</a>
+			<a href="shelbyfoote.html" class="list-group-item">Shelby Foote</a>
+			<a href="albertgorejr.html" class="list-group-item">Albert A. Gore, Jr.</a>
+			<a href="patsummitt.html" class="list-group-item">Pat Head Summitt</a>
+			<a href="dollyparton.html" class="list-group-item">Dolly Parton</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <footer>
+        <p>Copyright &copy; 2017 THOF</p>
+      </footer>
+
+    </div><!--/.container-->
+	</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>	
+	<script>
+		$(document).ready(function() {
+  $('[data-toggle="offcanvas"]').click(function() {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+	</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('williamblount');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>
